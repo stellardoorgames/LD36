@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PhoneCharacter : Character {
+public class PhoneCharacter : EnemyCharacter {
 
 	protected override void Start ()
 	{

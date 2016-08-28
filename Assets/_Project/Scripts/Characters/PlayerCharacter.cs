@@ -40,8 +40,6 @@ public class PlayerCharacter : Character {
 
 		animator = GetComponent<Animator> ();
 
-		fightController.gameObject.SetActive (false);
-
 	}
 
 	void Update () 
@@ -81,12 +79,17 @@ public class PlayerCharacter : Character {
 	{
 		if (other.tag == "Enemy")
 		{
+			Debug.Log ("Encounter Enemy");
 			Character enemy = other.GetComponent<Character> ();
-			fightController.gameObject.SetActive (true);
 			fightController.StartFight (this, enemy);
+			/*if (!fightController.gameObject.activeSelf)
+			{
+				fightController.gameObject.SetActive (true);
+			}*/
 		}
 		else if (other.tag == "Item")
 		{
+			Debug.Log ("Pickup Item");
 			Item item = other.GetComponent<Item> ();
 			AddItem (item);
 			GameObject.Destroy (other.gameObject);

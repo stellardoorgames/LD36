@@ -1120,9 +1120,8 @@ GameObject:
   - 4: {fileID: 483028}
   - 95: {fileID: 9570230}
   - 54: {fileID: 5418106}
-  - 65: {fileID: 6579598}
   - 114: {fileID: 11436490}
-  - 135: {fileID: 13583190}
+  - 135: {fileID: 13592142}
   m_Layer: 0
   m_Name: GameBox
   m_TagString: Player
@@ -4706,6 +4705,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &177124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 422778}
+  m_Layer: 0
+  m_Name: CameraTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &177968
 GameObject:
   m_ObjectHideFlags: 1
@@ -6972,6 +6986,19 @@ Transform:
   - {fileID: 452446}
   m_Father: {fileID: 439204}
   m_RootOrder: 5
+--- !u!4 &422778
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 483028}
+  m_RootOrder: 7
 --- !u!4 &423200
 Transform:
   m_ObjectHideFlags: 1
@@ -7972,7 +7999,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169792}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100.00001, z: 100.00001}
   m_LocalEulerAnglesHint: {x: -89.980194, y: 0, z: 0}
   m_Children: []
@@ -10433,6 +10460,7 @@ Transform:
   - {fileID: 411486}
   - {fileID: 427462}
   - {fileID: 492220}
+  - {fileID: 422778}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &483260
@@ -11306,18 +11334,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &6579598
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117522}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.157941, y: 4.3645735, z: 1.838907}
-  m_Center: {x: 0, y: 2.218409, z: -0.13155603}
 --- !u!95 &9570230
 Animator:
   serializedVersion: 3
@@ -11358,7 +11374,7 @@ MonoBehaviour:
   speakers: {fileID: 158974}
   printer: {fileID: 140926}
   fightController: {fileID: 0}
---- !u!135 &13583190
+--- !u!135 &13592142
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -11368,7 +11384,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1.9
   m_Center: {x: 0, y: 2, z: 0}
 --- !u!137 &13708004
 SkinnedMeshRenderer:

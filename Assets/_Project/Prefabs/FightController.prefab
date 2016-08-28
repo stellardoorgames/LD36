@@ -370,6 +370,7 @@ MonoBehaviour:
   AttackSound: {fileID: 0}
   MissSound: {fileID: 0}
   fadeInTime: 0.5
+  fadeOutTime: 0.5
 --- !u!114 &11428236
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -524,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.991}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -739,7 +740,7 @@ MonoBehaviour:
   m_CellSize: {x: 305, y: 61}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
-  m_ConstraintCount: 2
+  m_ConstraintCount: 3
 --- !u!222 &22216060
 CanvasRenderer:
   m_ObjectHideFlags: 1

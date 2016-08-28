@@ -6,11 +6,12 @@ public class Character : MonoBehaviour {
 
 	public string characterName;
 
-	public float life = 20f;
+	public float life = 8f;
 
 	public HashSet<Ability> abilities;
 
 	public Sprite texture;
+	public Sprite textureHurt;
 
 	// Use this for initialization
 	protected virtual void Start () {
@@ -29,8 +30,8 @@ public class Character : MonoBehaviour {
 			Die ();
 	}
 
-	public void Die()
+	public virtual void Die()
 	{
-		
+		GameObject.Destroy (gameObject);
 	}
 }

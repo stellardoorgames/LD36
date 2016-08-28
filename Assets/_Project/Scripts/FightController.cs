@@ -26,18 +26,22 @@ public class FightController : MonoBehaviour {
 	public float fadeInTime = 0.5f;
 	public float fadeOutTime = 0.5f;
 
+	public bool isHit = false;
+
+	public GameObject canvas;
+
 	Character player;
 	Character enemy;
 
 	Animator anim;
 
-
+	public bool isFighting = false;
 
 	// Use this for initialization
 	void Start () {
 		menuObject.SetActive (false);
 		anim = GetComponent<Animator> ();
-
+		canvas.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -52,13 +56,22 @@ public class FightController : MonoBehaviour {
 
 	public IEnumerator StartFightCoroutine(Character characterA, Character characterB)
 	{
+		if (isFighting)
+			yield break;
+		
+		isFighting = true;
+		canvas.SetActive (true);
+		
 		player = characterA;
 		enemy = characterB;
 
+		DisplayItems (player as PlayerCharacter);
+
 		enemyImage.sprite = enemy.texture;
 
-		foreach(Ability ability in characterA.abilities)
+		foreach(Ability ability in player.abilities)
 		{
+			Debug.Log (ability.type);
 			GameObject go = Instantiate (buttonPrefab);
 			go.transform.SetParent (menuObject.transform);
 			ButtonController bc = go.GetComponent<ButtonController> ();
@@ -73,9 +86,7 @@ public class FightController : MonoBehaviour {
 
 		yield return new WaitForSeconds(2.5f);
 
-		textObject.text = "";
-
-		menuObject.SetActive (true);
+		FightOptions ();
 	}
 
 	public void FightOptions()
@@ -93,6 +104,10 @@ public class FightController : MonoBehaviour {
 	{
 		menuObject.SetActive (false);
 
+		isHit = (Random.value <= ability.chance);
+		anim.SetBool ("IsHit", isHit);
+		Debug.Log (isHit ? "hit" : "miss");
+
 		if (ability.type == AbilityType.Run)
 		{
 			textObject.text = string.Format ("{0} ran away!", player.characterName);
@@ -103,19 +118,14 @@ public class FightController : MonoBehaviour {
 		{
 			textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.name);
 			anim.SetTrigger ("Attack1");
-			
+
 			yield return new WaitForSeconds(2.5f);
-			
+
 			FightOptions ();
 			
 		}
 	}
-/*
-	public void OnRun()
-	{
-		
-	}
-*/
+
 	public void EndFight()
 	{
 		StartCoroutine (EndFightCoroutine ());
@@ -123,17 +133,41 @@ public class FightController : MonoBehaviour {
 
 	public IEnumerator EndFightCoroutine()
 	{
+		//Destroy Buttons
+		ButtonController[] buttons = menuObject.GetComponentsInChildren<ButtonController> ();
+		for (int i = 0; i < buttons.Length; i++)
+			GameObject.Destroy (buttons [i].gameObject);
+
+		//Fade out
 		CameraFader.current.FadeOut (fadeOutTime);
-
 		yield return new WaitForSeconds (fadeOutTime);
-
+		//Reset camera
 		CameraFader.current.FadeIn (0f);
 
-		gameObject.SetActive (false);
+		//Turn off
+		canvas.SetActive (false);
+		isFighting = false;
 	}
 
-	void DisplayItems(Character character)
+	//Because unity animation events can't do bools for some reason!
+	void EnemyTakeHit(int hit)
 	{
-		
+		EnemyTakeHit (hit == 1);
 	}
+	void EnemyTakeHit(bool hit)
+	{
+		enemyImage.sprite = hit ? enemy.textureHurt : enemy.texture;
+	}
+
+	void DisplayItems(PlayerCharacter character)
+	{
+		antenne.SetActive (character.antenna.activeSelf);
+		cam.SetActive (character.cam.activeSelf);
+		magnifier.SetActive (character.magnifier.activeSelf);
+		printer.SetActive (character.printer.activeSelf);
+		speakers.SetActive (character.speakers.activeSelf);
+
+	}
+
+
 }
