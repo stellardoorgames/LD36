@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerCharacter : Character {
 
@@ -7,13 +8,16 @@ public class PlayerCharacter : Character {
 	public float turnSpeed = 0.3f;
 	public float waitTime = 3f;
 
-	public GameObject camera;
+	public GameObject cam;
 	public GameObject magnifier;
 	public GameObject antenna;
-	public GameObject Speakers;
-	public GameObject Printer;
+	public GameObject speakers;
+	public GameObject printer;
 
 	public FightController fightController;
+
+	public HashSet<Item> items;
+	//public List<Item> items;
 
 	bool isWalking = false;
 	bool isIdle = false;
@@ -22,11 +26,15 @@ public class PlayerCharacter : Character {
 
 	Animator animator;
 
+
+
 	protected override void Start ()
 	{
 		base.Start ();
 
-		AddAbility (AbilityType.Eye_Strain);
+		items = new HashSet<Item> ();
+
+		//AddAbility (AbilityType.Eye_Strain);
 		AddAbility (AbilityType.Smirk);
 		AddAbility (AbilityType.Run);
 
@@ -63,11 +71,11 @@ public class PlayerCharacter : Character {
 		animator.SetBool ("IsIdle", isIdle);
 	}
 
-	public void UpdateItems(Character character)
+	/*public void UpdateItems()
 	{
 		//if (character.)
-		animator.SetFloat ("Weight", weight);
-	}
+		if ()
+	}*/
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -77,5 +85,39 @@ public class PlayerCharacter : Character {
 			fightController.gameObject.SetActive (true);
 			fightController.StartFight (this, enemy);
 		}
+		else if (other.tag == "Item")
+		{
+			Item item = other.GetComponent<Item> ();
+			AddItem (item);
+			GameObject.Destroy (other.gameObject);
+			Debug.Log (items.Count);
+		}
+	}
+
+	void AddItem(Item item)
+	{
+		items.Add (item);
+		foreach(AbilityType abilityType in item.abilities)
+		{
+			AddAbility (abilityType);
+		}
+
+		foreach(Item i in items)
+		{
+			if (i.type == ItemType.Antenne)
+				antenna.SetActive (true);
+			else if (i.type == ItemType.Camera)
+				cam.SetActive (true);
+			else if (i.type == ItemType.Magnifier)
+				magnifier.SetActive (true);
+			else if (i.type == ItemType.Printer)
+				printer.SetActive (true);
+			else if (i.type == ItemType.Speakers)
+				speakers.SetActive (true);
+			
+		}
+
+		weight = Mathf.InverseLerp (0, 5, items.Count);
+		animator.SetFloat ("Weight", weight);
 	}
 }

@@ -8,11 +8,13 @@ public class Character : MonoBehaviour {
 
 	public float life = 20f;
 
-	public List<Ability> abilities;
+	public HashSet<Ability> abilities;
+
+	public Sprite texture;
 
 	// Use this for initialization
 	protected virtual void Start () {
-		abilities = new List<Ability> ();
+		abilities = new HashSet<Ability> ();
 	}
 
 	public void AddAbility(AbilityType abilityType)

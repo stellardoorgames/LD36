@@ -2,6 +2,7 @@
 using System.Collections;
 using TMPro;
 using NodeCanvas.Tasks.Actions;
+using UnityEngine.UI;
 
 public class FightController : MonoBehaviour {
 
@@ -9,8 +10,9 @@ public class FightController : MonoBehaviour {
 
 	public GameObject menuObject;
 	public GameObject buttonPrefab;
+	public Image enemyImage;
 
-	public GameObject camera;
+	public GameObject cam;
 	public GameObject antenne;
 	public GameObject speakers;
 	public GameObject magnifier;
@@ -22,11 +24,14 @@ public class FightController : MonoBehaviour {
 	public AudioClip MissSound;
 	//AudioClip 
 	public float fadeInTime = 0.5f;
+	public float fadeOutTime = 0.5f;
 
 	Character player;
 	Character enemy;
 
 	Animator anim;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -49,6 +54,8 @@ public class FightController : MonoBehaviour {
 	{
 		player = characterA;
 		enemy = characterB;
+
+		enemyImage.sprite = enemy.texture;
 
 		foreach(Ability ability in characterA.abilities)
 		{
@@ -85,21 +92,48 @@ public class FightController : MonoBehaviour {
 	public IEnumerator UseAbilityCoroutine(Ability ability)
 	{
 		menuObject.SetActive (false);
-		anim.SetTrigger ("Attack1");
-		textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.name);
 
-		yield return new WaitForSeconds(2.5f);
+		if (ability.type == AbilityType.Run)
+		{
+			textObject.text = string.Format ("{0} ran away!", player.characterName);
 
-		FightOptions ();
+			EndFight ();
+		}
+		else
+		{
+			textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.name);
+			anim.SetTrigger ("Attack1");
+			
+			yield return new WaitForSeconds(2.5f);
+			
+			FightOptions ();
+			
+		}
 	}
-
+/*
 	public void OnRun()
 	{
 		
 	}
-
+*/
 	public void EndFight()
 	{
+		StartCoroutine (EndFightCoroutine ());
+	}
+
+	public IEnumerator EndFightCoroutine()
+	{
+		CameraFader.current.FadeOut (fadeOutTime);
+
+		yield return new WaitForSeconds (fadeOutTime);
+
+		CameraFader.current.FadeIn (0f);
+
 		gameObject.SetActive (false);
+	}
+
+	void DisplayItems(Character character)
+	{
+		
 	}
 }
