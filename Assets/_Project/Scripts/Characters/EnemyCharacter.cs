@@ -6,6 +6,8 @@ public class EnemyCharacter : Character {
 
 	public GameObject itemPrefab;
 
+	public string introTextA;
+
 	protected override void Start ()
 	{
 		base.Start ();
@@ -29,6 +31,6 @@ public class EnemyCharacter : Character {
 		if (itemPrefab != null)
 			Instantiate (itemPrefab, transform.position, Quaternion.identity);
 
-		base.Die ();
+		GameObject.Destroy (gameObject);
 	}
 }

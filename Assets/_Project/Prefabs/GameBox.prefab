@@ -7510,7 +7510,7 @@ Transform:
   m_LocalRotation: {x: 0.7789727, y: 0, z: 0, w: 0.62705785}
   m_LocalPosition: {x: -0, y: 0.0011803446, z: 0.011648859}
   m_LocalScale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 77.6668, y: -180, z: -180}
   m_Children:
   - {fileID: 436302}
   m_Father: {fileID: 423200}
@@ -10944,7 +10944,7 @@ Transform:
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100.00001, z: 100.00001}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.980194, y: 0, z: 0}
   m_Children:
   - {fileID: 423200}
   m_Father: {fileID: 483028}
@@ -11365,6 +11365,7 @@ MonoBehaviour:
   characterName: Game Box
   life: 20
   texture: {fileID: 0}
+  textureHurt: {fileID: 0}
   walkSpeed: 10
   turnSpeed: 0.3
   waitTime: 3

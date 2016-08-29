@@ -11,6 +11,15 @@ public class FightController : MonoBehaviour {
 	public GameObject menuObject;
 	public GameObject buttonPrefab;
 	public Image enemyImage;
+	public Image background;
+	public Color normalBackgroundColor = Color.white;
+	public Color blackBackgroundColor = Color.black;
+	public Color fodeOutBackgroundColor = Color.clear;
+	public float fadeDuration = 1f;
+
+	public Sprite normalFightBackground;
+	public Sprite postFightBackground;
+	public Sprite finalBossBackground;
 
 	public GameObject cam;
 	public GameObject antenne;
@@ -22,16 +31,19 @@ public class FightController : MonoBehaviour {
 	public AudioClip SelectSound;
 	public AudioClip AttackSound;
 	public AudioClip MissSound;
-	//AudioClip 
+	public AudioClip victorySound;
+	public AudioClip defeatSound;
+
 	public float fadeInTime = 0.5f;
 	public float fadeOutTime = 0.5f;
+	public float messageTime = 2.5f;
 
 	public bool isHit = false;
 
 	public GameObject canvas;
 
-	Character player;
-	Character enemy;
+	PlayerCharacter player;
+	EnemyCharacter enemy;
 
 	Animator anim;
 
@@ -42,6 +54,8 @@ public class FightController : MonoBehaviour {
 		menuObject.SetActive (false);
 		anim = GetComponent<Animator> ();
 		canvas.SetActive (false);
+		background.sprite = normalFightBackground;
+		normalBackgroundColor = background.color;
 	}
 	
 	// Update is called once per frame
@@ -49,12 +63,12 @@ public class FightController : MonoBehaviour {
 	
 	}
 
-	public void StartFight(Character characterA, Character characterB)
+	public void StartFight(PlayerCharacter characterA, EnemyCharacter characterB)
 	{
 		StartCoroutine (StartFightCoroutine (characterA, characterB));
 	}
 
-	public IEnumerator StartFightCoroutine(Character characterA, Character characterB)
+	public IEnumerator StartFightCoroutine(PlayerCharacter characterA, EnemyCharacter characterB)
 	{
 		if (isFighting)
 			yield break;
@@ -65,7 +79,7 @@ public class FightController : MonoBehaviour {
 		player = characterA;
 		enemy = characterB;
 
-		DisplayItems (player as PlayerCharacter);
+		DisplayItems (player);
 
 		enemyImage.sprite = enemy.texture;
 
@@ -78,13 +92,18 @@ public class FightController : MonoBehaviour {
 			bc.InitButton (ability, this);
 		}
 
-		textObject.text = string.Format ("A shiney new {0} appears!", enemy.characterName);
+		textObject.text = string.Format ("A {0} appears!", enemy.characterName);
 
 		AudioSource.PlayClipAtPoint (OpenSound, transform.position);
 
 		CameraFader.current.FadeIn(fadeInTime);
 
-		yield return new WaitForSeconds(2.5f);
+		yield return new WaitForSeconds (1f);
+		
+		//textObject.text += "\n\n" + enemy.introTextA;
+		textObject.text += "\n\n\"" + enemy.introTextA + "\"";
+		
+		yield return new WaitForSeconds(3f);
 
 		FightOptions ();
 	}
@@ -102,11 +121,9 @@ public class FightController : MonoBehaviour {
 
 	public IEnumerator UseAbilityCoroutine(Ability ability)
 	{
-		menuObject.SetActive (false);
+		AudioSource.PlayClipAtPoint (SelectSound, transform.position);
 
-		isHit = (Random.value <= ability.chance);
-		anim.SetBool ("IsHit", isHit);
-		Debug.Log (isHit ? "hit" : "miss");
+		menuObject.SetActive (false);
 
 		if (ability.type == AbilityType.Run)
 		{
@@ -116,14 +133,115 @@ public class FightController : MonoBehaviour {
 		}
 		else
 		{
-			textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.name);
+			isHit = enemy.TakeAttack (ability);
+			anim.SetBool ("IsHit", isHit);
+			Debug.Log (isHit ? "hit" : "miss");
+
+			string attackText = string.Format ("{0} used {1}.", player.characterName, ability.name);
+
+			if (!isHit)
+			{
+				attackText += "\n\nIt missed!";
+			}
+			else 
+			{
+				attackText += "\n\nIt hit!";
+			}
+
+			textObject.text = attackText;
 			anim.SetTrigger ("Attack1");
 
-			yield return new WaitForSeconds(2.5f);
+			yield return new WaitForSeconds(messageTime);
 
-			FightOptions ();
+			if (enemy.life > 0f)
+			{
+				EnemyTurn ();
+			}
+			else
+			{
+				Victory ();
+			}
 			
 		}
+	}
+
+	void EnemyTurn()
+	{
+		StartCoroutine (EnemyTurnCoroutine ());
+	}
+
+	IEnumerator EnemyTurnCoroutine()
+	{
+		Ability enemyAbility = enemy.GetRandomAbility ();
+
+		isHit = player.TakeAttack (enemyAbility);
+		anim.SetBool ("IsHit", isHit);
+
+		anim.SetTrigger ("EnemyAttack1");
+
+		string attackText = string.Format ("{0} used {1}!", enemy.name, enemyAbility.name);
+
+		if (!isHit)
+		{
+			attackText += "\n\nIt missed!";
+		}
+		else
+		{
+			attackText += "\n\nIt hit!";
+
+		}
+
+		textObject.text = attackText;
+
+		yield return new WaitForSeconds(messageTime);
+
+
+		if (player.life > 0f)
+		{
+			FightOptions ();
+		}
+		else
+		{
+			player.Die ();
+			Defeat ();
+		}
+
+	}
+
+	void Victory()
+	{
+		EnemyTakeHit (true);
+
+		string endingText = string.Format ("{0} was defeated!\n\nYou wins!", enemy.name);
+
+		StartCoroutine (PlayEnding (endingText));
+
+		enemy.Die ();
+	}
+
+	void Defeat()
+	{
+		string endingText = string.Format ("You lost.\n\n{0} wins.", enemy.name);
+
+		StartCoroutine (PlayEnding (endingText));
+	}
+
+	IEnumerator PlayEnding(string endingText)
+	{
+		float startTime = Time.time;
+		float endTime = startTime + fadeDuration;
+		while (Time.time < endTime)
+		{
+			float t = Mathf.InverseLerp (startTime, endTime, Time.time);
+			background.color = Color.Lerp (normalBackgroundColor, blackBackgroundColor, t);
+			yield return null;
+		}
+
+		textObject.text = endingText;
+
+		yield return new WaitForSeconds (messageTime);
+
+		EndFight();
 	}
 
 	public void EndFight()
@@ -147,6 +265,8 @@ public class FightController : MonoBehaviour {
 		//Turn off
 		canvas.SetActive (false);
 		isFighting = false;
+
+		background.color = normalBackgroundColor;
 	}
 
 	//Because unity animation events can't do bools for some reason!

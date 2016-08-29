@@ -44,6 +44,9 @@ public class PlayerCharacter : Character {
 
 	void Update () 
 	{
+		if (fightController.isFighting)
+			return;
+
 		Vector3 move = new Vector3 (Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
 		isIdle = false;
@@ -80,7 +83,7 @@ public class PlayerCharacter : Character {
 		if (other.tag == "Enemy")
 		{
 			Debug.Log ("Encounter Enemy");
-			Character enemy = other.GetComponent<Character> ();
+			EnemyCharacter enemy = other.GetComponent<EnemyCharacter> ();
 			fightController.StartFight (this, enemy);
 			/*if (!fightController.gameObject.activeSelf)
 			{
@@ -122,5 +125,10 @@ public class PlayerCharacter : Character {
 
 		weight = Mathf.InverseLerp (0, 5, items.Count);
 		animator.SetFloat ("Weight", weight);
+	}
+
+	public override void Die ()
+	{
+		life = 8f;
 	}
 }

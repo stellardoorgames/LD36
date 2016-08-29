@@ -23,15 +23,27 @@ public class Character : MonoBehaviour {
 		abilities.Add (Ability.list [abilityType]);
 	}
 
+	public virtual bool TakeAttack(Ability ability)
+	{
+		if (Random.value > ability.chance)
+			return false;
+
+		//if ()
+
+		TakeDamage (ability.damage);
+
+		return true;
+	}
+
 	public void TakeDamage (float damage)
 	{
 		life -= damage;
-		if (life <= 0f)
-			Die ();
+		//if (life <= 0f)
+		//	Die ();
 	}
 
 	public virtual void Die()
 	{
-		GameObject.Destroy (gameObject);
+		
 	}
 }
