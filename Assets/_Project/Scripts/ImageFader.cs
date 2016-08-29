@@ -29,10 +29,10 @@ public class ImageFader : MonoBehaviour {
 			StartImage ();
 	}
 
-	void OnEnable()
+	/*void OnEnable()
 	{
 		StartImage ();
-	}
+	}*/
 
 	public void StartImage()
 	{
@@ -82,7 +82,12 @@ public class ImageFader : MonoBehaviour {
 		yield return new WaitForSeconds (nextImageTime);
 
 		if (nextObject != null)
+		{
 			nextObject.SetActive (true);//.StartImage ();
+			ImageFader img = nextObject.GetComponent<ImageFader> ();
+			if (img != null)
+				img.StartImage ();
+		}
 		
 	}
 }

@@ -544,10 +544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: MapScene01
+  levelName: MenuScene01
   fadeIn: 1
   fadeInDuration: 1
   fadeOutDuration: 1
+  fadeOutAudio: 0
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0
