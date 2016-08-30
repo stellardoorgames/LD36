@@ -1,0 +1,265 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "mePhone",
+    "ego": 14,
+    "damage": 5,
+    "intro": [
+      "mePhone: Look upon the face of sheer perfection, and tremble, little creature.",
+      "mePhone: You, my sad friend, are an ancient technology that has no place in this world any longer.",
+      "mePhone's eyes narrow, and he glares at you with pure contempt.",
+      "mePhone: You... are obsolete."
+    ],
+    "attacks": [
+      {
+        "type": "Attack",
+        "name": "Humiliate",
+        "damage": 1,
+        "dialog": [
+          "mePhone: I wonder why I'm so popular.  Is it my gorgeous design? My features? My power?",
+          "mePhone strikes a pose of such elegant style and grace that you start to feel bad about yourself."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Life of the Party",
+        "damage": 1,
+        "dialog": [
+          "mePhone: You're funny. You know who might think you're funny?",
+          "mePhone: ALL OF MY FRIENDS.",
+          "mePhone scrolls through his impressively long list of social media friends with a smirk.",
+          "You feel a little bit alone right now."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "From Thin Air",
+        "damage": 1,
+        "dialog": [
+          "mePhone: Ugh. I'm bored. Fighting you is boring.",
+          "mePhone decides he'd like to play a new game, and conjures it from the ether.",
+          "Have your cartridges always been this heavy?"
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Embarrassing Selfie",
+        "damage": 1,
+        "dialog": [
+          "mePhone: Smile for the world now!",
+          "mePhone turns around and takes a photo of himself looking glamorous, with you in the background.",
+          "You do not at all look glamorous, and you think he knows it."
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "type": "Tier",
+        "prompt": "mePhone: You look a little familiar. Are you one of those game devices I read about in history class?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Haven't I seen you everywhere?",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "mePhone's eyes narrow, but he composes it into a look of smug satisfaction.",
+              "mePhone: Just because I am not one of a kind doesn't mean I'm not perfect.",
+              "mePhone: Besides, why wouldn't everyone have a mePhone?  We're simply the best choice."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Nice buttons! Er, button.",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "mePhone looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Vain much?",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "mePhone looks unfazed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "mePhone: It must be fun carrying big plastic cartridges everywhere you go.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Is that a crack in your screen?",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "mePhone: WHAT?!",
+              "mePhone panics, but, finding no crack, glares at you hatefully.",
+              "mePhone: How dare you?!",
+              "mePhone: There are some things we DO NOT joke about."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "How's your battery life?",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "mePhone looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Not as cool as phoneDroids!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "mePhone looks a little irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "mePhone: So sad. No internet. No apps. No friends. So very alone. ...and ugly.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Don't see many old mePhones",
+            "damage": 4,
+            "progress": true,
+            "followup": [
+              "mePhone guards his expression, as if hiding a glint of fear.",
+              "mePhone: True, but... I am the peak of technological perfection.  I'm not going anywhere.",
+              "mePhone sounds a little bit less than certain."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Here, have an ugly background!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "mePhone looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Look out, an ugly case!",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "mePhone looks a little annoyed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "mePhone: Enough of this! You are old, you are worthless, and your age is past!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Look, they released a new mePhone!",
+            "damage": 5,
+            "progress": true,
+            "followup": [
+              "mePhone utterly loses it.",
+              "mePhone: WHAT?!  No... no, no, NO!",
+              "mePhone: This... this cannot be happening!",
+              "mePhone: It wasn't my time!  I want more life!"
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Do you like washing machines?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "mePhone looks a little irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "On-screen controls sure are awful",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "mePhone looks pretty annoyed."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 1,
+        "item": "speakers",
+        "replies": [
+          "mePhone seems to acknowledge the might of your speakers, but doesn't seem very bothered about it.",
+          "mePhone: Sure, you have speakers.  But I can connect to any sound system on the planet!"
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "screen",
+        "replies": [
+          "mePhone laughs himself silly at your screen.",
+          "mePhone: Oh, is that your display?  I'm sorry, I thought it was a mosaic.",
+          "mePhone: ...an *ugly* mosaic."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "camera",
+        "replies": [
+          "mePhone seems to think your camera is adorable.",
+          "mePhone: Is that one whole tenth of a megapixel?  No?  Not even?",
+          "mePhone: Nice try."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "printer",
+        "replies": [
+          "mePhone seems aware of the potential utility of your printer, but remains mostly unimpressed.",
+          "mePhone: Nice try, but, I think I'll stick to printing wirelessly, thank you.",
+          "mePhone: Less baggage, and all."
+        ]
+      }
+    ],
+    "win": [
+      "mePhone seems to struggle to catch his breath, and it looks as though his life has just flashed before his screen.",
+      "mePhone: ...I was *sure* I was the best, but... I'm...",
+      "mePhone: ...I'm... ... ...replaceable?",
+      "mePhone seems to contemplate his place in the universe as if for the first time.",
+      "mePhone: All these weeks of being young and handsome and popular, and now... it's over.",
+      "mePhone: I'll probably send the rest of my life in a drawer, or a closet somewhere...",
+      "mePhone: ...forgotten.",
+      "mePhone: This will be my... my last broadcast.  I guess this is me, signing off.  Forever.",
+      "mePhone: Here. I doubt I'll be needing this receiver anymore.  Maybe you can use it, if I won't get to.",
+      "mePhone: It's funny... for as ugly, and gross, and boxy, and clunky, and beepy...",
+      "mePhone: ...and pixelated, and low-color, and heavy, and cumbersome...",
+      "mePhone: ...and battery-eating, and inconvenient, and out of print, and utterly obsolete as you are...",
+      "mePhone: ...I never really realized that... you're a classic.",
+      "mePhone: ...and I guess that's something I'll never be.",
+      "mePhone: ...good luck, you ugly little monster.  I hope you have a longer, happier life than I will.",
+      "mePhone: ...but, hey... I guess you already have."
+    ],
+    "lose": [
+      "mePhone: Ha! Oh, this is going to get me SO many likes on my tweetBookstagram.",
+      "mePhone: Nice try, little freak.  I mean, not really, but... you know.",
+      "mePhone: Bother me again when you're... I dunno... less pathetic.  Later, loser."
+    ]
+  }
+}

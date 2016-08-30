@@ -26,17 +26,20 @@ public class PlayerCharacter : Character {
 
 	Animator animator;
 
+	public HashSet<ItemType> abilityList;
 
+	//public Dictionary<ItemType, GameObject> attachments;
 
 	protected override void Start ()
 	{
 		base.Start ();
 
 		items = new HashSet<Item> ();
+		abilityList = new HashSet<ItemType> ();
 
 		//AddAbility (AbilityType.Eye_Strain);
-		AddAbility (AbilityType.Smirk);
-		AddAbility (AbilityType.Run);
+		//AddAbility (AbilityType.Smirk);
+		//AddAbility (AbilityType.Run);
 
 		animator = GetComponent<Animator> ();
 
@@ -44,7 +47,7 @@ public class PlayerCharacter : Character {
 
 	void Update () 
 	{
-		if (fightController.isFighting)
+		if (fightController.isFighting || OptionMenuController.isMenuOpen)
 			return;
 
 		Vector3 move = new Vector3 (Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
@@ -103,25 +106,32 @@ public class PlayerCharacter : Character {
 	void AddItem(Item item)
 	{
 		items.Add (item);
-		foreach(AbilityType abilityType in item.abilities)
+		abilityList.Add(item.type);
+
+		//foreach(ItemType type in abilityList)
+			
+
+		/*foreach(AbilityType abilityType in item.abilities)
 		{
 			AddAbility (abilityType);
-		}
+		}*/
 
 		foreach(Item i in items)
 		{
-			if (i.type == ItemType.Antenne)
+			if (i.type == ItemType.reciever)
 				antenna.SetActive (true);
-			else if (i.type == ItemType.Camera)
+			else if (i.type == ItemType.camera)
 				cam.SetActive (true);
-			else if (i.type == ItemType.Magnifier)
+			else if (i.type == ItemType.screen)
 				magnifier.SetActive (true);
-			else if (i.type == ItemType.Printer)
+			else if (i.type == ItemType.printer)
 				printer.SetActive (true);
-			else if (i.type == ItemType.Speakers)
+			else if (i.type == ItemType.speakers)
 				speakers.SetActive (true);
 			
 		}
+
+		maxEgo += 2f;
 
 		weight = Mathf.InverseLerp (0, 5, items.Count);
 		animator.SetFloat ("Weight", weight);
@@ -129,6 +139,6 @@ public class PlayerCharacter : Character {
 
 	public override void Die ()
 	{
-		life = 8f;
+		ego = maxEgo;
 	}
 }

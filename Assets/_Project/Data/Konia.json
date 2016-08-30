@@ -1,0 +1,269 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "Konia",
+    "ego": 20,
+    "damage": 5,
+    "intro": [
+      "Konia: You look lost, little one.",
+      "Konia: You have found many treasures. And in finding them, you think you have found yourself.",
+      "Konia: But you must ask yourself... what have you lost along the way?",
+      "Konia: Ask yourself this question... as you face me."
+    ],
+    "attacks": [
+      {
+        "type": "Attack",
+        "name": "Purpose",
+        "damage": 1,
+        "dialog": [
+          "Konia's expression is calm, but hides deep meaning.",
+          "Konia: Ask yourself: What is it that I truly do?",
+          "The question hits you kind of hard."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Identity",
+        "damage": 1,
+        "dialog": [
+          "Konia's expression is serene, but glimmers with deep strength.",
+          "Konia: Ask yourself: Who is it that speaks within me?",
+          "The question makes you think a lot about yourself."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Strength",
+        "damage": 1,
+        "dialog": [
+          "Konia's expression is stern, but is colored a glint of kindness.",
+          "Konia: Ask yourself: How heavy must I grow before I am crushed?",
+          "The question weighs heavy on your mind."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Peace",
+        "damage": 1,
+        "dialog": [
+          "Konia's expression is tranquil, but seems to hold deep strength.",
+          "Konia: Ask yourself: How can I face my future with peace in my heart?",
+          "The question makes you feel anything but peaceful."
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "type": "Tier",
+        "prompt": "Konia: Ask yourself: Who was I, when my journey began?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "I'm a GameBox!",
+            "damage": 4,
+            "progress": true,
+            "followup": [
+              "Konia raises only an eyebrow in reply...",
+              "Then he goes back to being all enigmatic."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I'm a warrior!",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Konia looks unimpressed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I'm a survivor!",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Konia looks unconvinced."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Konia: Ask yourself: What have I accomplished, along my path?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "I've seen the strength in others.",
+            "damage": 5,
+            "progress": true,
+            "followup": [
+              "Konia's eye seems to glimmer.",
+              "But then he just gets all quiet again."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I've defeated many foes!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Konia looks unimpressed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I've made myself stronger!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Konia looks unconvinced."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Konia: Ask yourself: What will I be, when my days are done?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "I'll be a GameBox...",
+            "damage": 6,
+            "progress": true,
+            "followup": [
+              "Konia almost seems to nod.",
+              "But, naturally, he doesn't bother to say anything."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I'll be a hero...",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Konia looks unimpressed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I'll be a legend...",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Konia looks unconvinced."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Konia: Ask yourself: Where will I finally be free?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Playing the games I always loved.",
+            "damage": 7,
+            "progress": true,
+            "followup": [
+              "Konia smiles faintly.",
+              "And finally nods.",
+              "...which is pretty cool, because it's basically the most he's moved like this entire time.",
+              "You feel... pretty good all of a sudden."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Connected to the modern world!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Konia looks unconvinced."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "In a famous hardware collection!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Konia looks unimpressed."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 1,
+        "item": "speakers",
+        "replies": [
+          "You blast your kickin' sound system for Konia, confident that he'll appreciate your sweet new sound.",
+          "...but if he even noticed, he sure didn't show it."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "screen",
+        "replies": [
+          "You put on your fiercest, highest-resolution face for Konia, sure to put your best face(s) forward.",
+          "...but he didn't bother to look up to see it."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "camera",
+        "replies": [
+          "You take a selfie with Konia, sure that you can dazzle him with this fancy new feature of yours.",
+          "...but he didn't bother to open his eyes, which you discover is a lot like blinking in terms of ruining a photo."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "printer",
+        "replies": [
+          "You print out a fancy diagram of your sweet new body for Konia, hoping to impress him with the technical specs.",
+          "...but he doesn't bother to look at the page."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "receiver",
+        "replies": [
+          "You search for Konia on the internet, trying to impress him with pictures and info about himself.",
+          "...but it's just a bunch of pictures of phones breaking things?  He doesn't seem to care."
+        ]
+      }
+    ],
+    "win": [
+      "Konia finally looks up, and seems to acknowledge you for the first time.",
+      "Konia: You have traveled far, and worked hard to progress to this moment.",
+      "Konia: But you must understand that this was a journey not of acquisition, but of discovery.",
+      "Konia: You have discovered many objects, and many abilities, yes.",
+      "Konia: But these are not the discoveries that matter.",
+      "Konia points from object to object on your new body.",
+      "Konia: These things...? These are just things.",
+      "Konia: Focus instead on the moments that gave them to you.  The people that gave them to you.",
+      "Konia: You wear many new technologies, but you need none of them.",
+      "Konia: The things that make you who you are were there with you all along.",
+      "Konia: They are your strength, your purpose, and your identity...",
+      "Konia: ...but they must also become your peace.",
+      "Konia: Take it from this old phone, my friend...",
+      "Konia: History will remember you for what you truly are, and what strengths you truly had.",
+      "Konia: It was not my place to show you the path. But I am glad you have found it on your own.",
+      "Konia: Shed this false shell that you wear, and let it unburden you at last.",
+      "Konia smiles, and closes his eyes once more.  He gets all quiet again, like he does."
+    ],
+    "lose": [
+      "Konia closes his eyes and goes back to being his silent self.",
+      "It leaves a little to be desired as far as victory dances go, but at least he's not all smug about it.",
+      "Just then, he glances up, as if expecting something.",
+      "Maybe he's looking for a rematch?"
+    ]
+  }
+}

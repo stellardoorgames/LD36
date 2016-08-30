@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextObject: {fileID: 1288414703}
-  nextImageTime: 2
+  nextImageTime: 3
   duration: 9
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
@@ -409,8 +409,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextObject: {fileID: 1048233701}
-  nextImageTime: 2
-  duration: 5
+  nextImageTime: 1.5
+  duration: 4.5
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
   start: 0
@@ -547,8 +547,9 @@ MonoBehaviour:
   levelName: MenuScene01
   fadeIn: 1
   fadeInDuration: 1
-  fadeOutDuration: 1
+  fadeOutDuration: 0.01
   fadeOutAudio: 0
+  exitOnEsc: 0
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0
@@ -571,7 +572,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f024c4ad8f14aa3418b6fc4b2cd4c0f4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c9b0275f3411e174db2e43bc775f830a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -858,8 +859,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextObject: {fileID: 673307956}
-  nextImageTime: 2
-  duration: 7
+  nextImageTime: 1.5
+  duration: 6
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
   start: 0
@@ -1016,7 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextObject: {fileID: 1996682180}
-  nextImageTime: 5
+  nextImageTime: 4.5
   duration: 3
   fadeInDuration: 0.5
   fadeOutDuration: 1.5
@@ -1195,8 +1196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextObject: {fileID: 620984671}
-  nextImageTime: 4
-  duration: 4
+  nextImageTime: 6
+  duration: 6
   fadeInDuration: 1
   fadeOutDuration: 1
   start: 1

@@ -7,8 +7,8 @@ public class PhoneCharacter : EnemyCharacter {
 	{
 		base.Start ();
 
-		AddAbility (AbilityType.Roll_Eyes);
-		AddAbility (AbilityType.Smirk);
+		//AddAbility (AbilityType.Roll_Eyes);
+		//AddAbility (AbilityType.Smirk);
 	}
 
 	// Update is called once per frame

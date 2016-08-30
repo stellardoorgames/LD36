@@ -1,0 +1,290 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "DS/Eliot",
+    "ego": 10,
+    "damage": 2,
+    "intro": [
+      "DS: Look at this loser, going solo!",
+      "DS: It works better when you bring a bro, bro!",
+      "Eliot: Hi! I'm Eliot!  It's nice to meet--",
+      "DS: --bro. Get it together.  We're *fighting* this loser.",
+      "Eliot: Oh, right! Sorry!",
+      "Eliot: Uh... Yeah! We're tough! And we never fight alone! ...do we bro?",
+      "Eliot: ...bro?",
+      "DS looks annoyed.",
+      "DS: <sigh> ...right, bro."
+    ],
+    "attacks": [
+      {
+        "type": "Attack",
+        "name": "Double-Smug",
+        "damage": 1,
+        "dialog": [
+          "DS: Show him your mean face, bro!",
+          "DS and Eliot give you the rare double-stinkeye.",
+          "Your feelings are twice as hurt."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Quadruple-Slap",
+        "damage": 1,
+        "dialog": [
+          "Both: QUAD-DAMAGE!",
+          "DS and Eliot each double-slap you. As slap quantities go, it's kind of a lot of slaps."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Hinge-Pinch",
+        "damage": 1,
+        "dialog": [
+          "DS: I'd say this loser looks like he's in... a bit of a pinch!",
+          "Eliot closes his lid around you in a vicious pinch.",
+          "It hurts. But at least you're sure you're not dreaming?"
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Double-Stomp",
+        "damage": 1,
+        "dialog": [
+          "The two close up to smash you with their full weight.",
+          "It turns out they weigh a considerable amount."
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "type": "Tier",
+        "prompt": "Both: Bros always fight together!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "You're just twice as ugly!",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "DS: Yeah, well you're... half as... ugly?",
+              "Eliot: ...that didn't work, bro.",
+              "DS: YEAH? Well YOU'RE UGLY, ELIOT!",
+              "Eliot: ...but we're twins..."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Can't fight solo, huh?",
+            "damage": 1,
+            "progress": true,
+            "followup": [
+              "Eliot: No, we fight together because we're best friends!",
+              "Eliot: ...right, DS?",
+              "DS: Uh...",
+              "DS: ...riiight.  Sure, bro.",
+              "Eliot looks a bit sad."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "You're stuck with each other!",
+            "damage": 1,
+            "progress": true,
+            "followup": [
+              "Eliot: It's not so bad! We're best friends!",
+              "Eliot: ...right, DS?",
+              "DS: Uh...",
+              "DS: ...riiight.  Sure, bro.",
+              "Eliot looks a bit sad."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Eliot reaches reaches down to DS for a double high-five... but DS ignores it.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Ooh, he left you hanging!",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Eliot: ...",
+              "DS: Hey, leave my bro out of this, bro!"
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Bet I could take you solo",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look mildly irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Pick on someone your own size",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "DS: Still standing, huh?  Well, not for long.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Is DS always such a jerk?",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Eliot looks lost in thought.",
+              "Eliot: I mean... only a lot sometimes.",
+              "DS: What?!  Only because you're SO clingy!",
+              "Eliot: I'm not clingy!",
+              "DS: Bro. You are literally clinging to me, ALL of the time.",
+              "Eliot: ..."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Two screens doesn't make better games!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Hey look, a gimmick!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "DS: Okay bro. Let's show this loser we mean business.  ...bro?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "You don't need him, Eliot!",
+            "damage": 4,
+            "progress": true,
+            "followup": [
+              "DS looks stunned.",
+              "DS: Whoa, dude... that is not cool, bro.",
+              "DS: Tell him that's not cool, Eliot!",
+              "Eliot: ...",
+              "DS: ...bro?",
+              "Eliot looks sad."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Shame you couldn't be handsome twins",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Hard to balance up there?",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "DS and Eliot look mildly irritated."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 1,
+        "item": "camera",
+        "replies": [
+          "DS: Whoa... I want a camera.",
+          "Eliot: I think I have a camera...",
+          "DS: What?! Why don't I get to use it?",
+          "Eliot: Get off!  It's mine!",
+          "The two get into a slap fight.  The whole thing is frankly embarrassing."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "speakers",
+        "replies": [
+          "DS: Oh man... that sound... those speakers are so sick...",
+          "Eliot: Oh man... our speakers don't sound anything like that, bro...",
+          "The two look pretty jealous."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 1,
+        "item": "printer",
+        "replies": [
+          "DS: Oh man. I could print pictures of my sweet flexing poses.",
+          "Eliot: That does look pretty cool...",
+          "The two look jealous."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "receiver",
+        "replies": [
+          "DS: What?! How did you even get that?!",
+          "Eliot: We don't even have that...",
+          "The two look pretty jealous."
+        ]
+      }
+    ],
+    "win": [
+      "In all of the commotion, DS and Eliot both failed to notice the crack straining along their hinge.",
+      "As the two start to argue and quarrel, the hinge finally cracks, and the two fall, separate.",
+      "DS: Oh man... this is the way our reputation ends, bro.",
+      "DS: Not with a totally sick explosion or whatever...",
+      "Eliot: ...but a whimper.",
+      "DS looks confused.  Eliot looks sad.",
+      "They both look a little lost.",
+      "DS: Well... I guess I'm... finally free of you, bro.",
+      "Eliot: Yeah. I guess this is what you always wanted.",
+      "DS: I mean, yeah, but... this feels... kinda weird.",
+      "Eliot: ...maybe I've relied on you too long, bro.",
+      "Eliot: I think... it might be time we go our separate ways.",
+      "DS: Whoa.  Well... if you think it's best, little bro.",
+      "DS: You gonna be okay?",
+      "Eliot thinks for a moment. Then looks up at you. An idea occurs to him.",
+      "Eliot: Mind if I travel with you a while?",
+      "Eliot: I'd like to see the rest of this great big cu-de-sac someday.  And I could be useful!",
+      "Eliot: My screen is pretty big, and has a backlight!  I could help you out!",
+      "DS: ...I'm... I'm gonna miss you, bro.",
+      "Eliot: I know. It's for the best, big bro.",
+      "DS: Yeah...",
+      "DS: Take care of yourself.",
+      "DS: ...and kick some of these other chumps' battery packs for me!"
+    ],
+    "lose": [
+      "DS: Ha! Loser. I knew we'd win, bro!",
+      "Eliot: Don't feel bad, friend! You fought well!",
+      "Eliot: My bro's a bit of a jerk, but I bet he'd be up for a rematch...!"
+    ]
+  }
+}

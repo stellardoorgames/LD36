@@ -1,0 +1,244 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "Loadletter",
+    "ego": 13,
+    "damage": 4,
+    "intro": [
+      "Loadletter: RAAAARRRRGGGGHHHHH.",
+      "Loadletter seems to have a way with words."
+    ],
+    "attacks": [
+      {
+        "type": "Attack",
+        "name": "Lid Smash",
+        "damage": 1,
+        "dialog": [
+          "Loadletter chomps down on you with the lid of his scanner.",
+          "You note the impressiveness of his bite strength, amidst the pain."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Inkblot",
+        "damage": 1,
+        "dialog": [
+          "Loadletter sprays you with a mighty gout of ink.",
+          "It's almost the sheer cost of the ink that hurts, more than the stinging in your eyes."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Cold Shoulder",
+        "damage": 1,
+        "dialog": [
+          "Loadletter gets suspiciously quiet, utterly ignoring the last print job he was sent, which seems to have vanished without a trace.",
+          "You feel ignored."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Papercut",
+        "damage": 1,
+        "dialog": [
+          "Loadletter spits a full ream of paper at you, as quickly as he can fire it.",
+          "You can only dodge so many."
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "type": "Tier",
+        "prompt": "RaaaAARrrGghghhH!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "You seem a little... unfriendly",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "Loadletter's eyes seem to flicker with recognition.",
+              "You wonder if it's possible he has feelings, deep enough down."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Could you keep it down?",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Loadletter looks unfazed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Nice print resolution",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Loadletter looks unfazed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Raaaarrrrrggggh...!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Do you even have any friends?",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Loadletter's lid closes slightly, as if to recoil.",
+              "You're not totally sure he even understands you, but it's seeming possible."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I hope you like jammin' too...",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Loadletter looks a little annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "You're blocking out the sun...",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Loadletter looks unfazed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Rrraaaa...rrrrggghhh?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Try letting someone in",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Loadletter's eyes glint as if he is considering your words.",
+              "You remind yourself this could just be his scanning you for weaknesses."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Print this black rectangle for me?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Loadletter looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Do those buttons even do anything?",
+            "damage": 0,
+            "progress": false,
+            "followup": [
+              "Loadletter looks unfazed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "Rargh...?",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "You don't have to be alone!",
+            "damage": 4,
+            "progress": true,
+            "followup": [
+              "Loadletter closes his lid, and goes quiet."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Can you print two-sided?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Loadletter looks a little irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Time for a recalibration!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Loadletter looks pretty annoyed."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "speakers",
+        "replies": [
+          "Loadletter doesn't even seem to recognize the function of such a device.",
+          "He lets loose a mighty roar, but you're pretty sure he did that just because."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "screen",
+        "replies": [
+          "Loadletter doesn't even seem to recognize the function of such a device.",
+          "He growls menacingly, but when is he ever not doing that?"
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "camera",
+        "replies": [
+          "Loadletter seems to examine the camera, and realizes it's full color.",
+          "Something like irritation seems to flicker in his eyes, perhaps at the thought of needing to waste his color ink."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "receiver",
+        "replies": [
+          "Loadletter seems to recognize the receiver, and looks annoyed.",
+          "You get the impression he would rather not have to mess with his wireless settings yet another time in his life."
+        ]
+      }
+    ],
+    "win": [
+      "Loadletter: Raaargh... rargh.",
+      "Loadletter: Rargh rargh rarghrargh, rargh rargh raaargh rargh.",
+      "Loadletter: Rargh, rarghrarghragh rargh rargh, rargh rargh-rargh; rargh... rargh.",
+      "Loadletter: ...rargh?",
+      "You certainly have no earthly idea what he's saying, but the cadence of his groans and beeping seems to have softened.",
+      "To your surprise, he even sounds like he might not be picturing your murder.",
+      "You extend a hand of friendship to him, and he considers it thoughtfully for a long moment.",
+      "Loadletter: Rargh... rargh?  Rargh.",
+      "From the look in his cold LED eyes, you get the distinct impression he would like to come with you.",
+      "He detaches a tiny spool and print head, and offers it to you with a gesture of either friendship, or at least not-murder.",
+      "Loadletter: Rargh."
+    ],
+    "lose": [
+      "Loadletter: RAAARRRRRGGGGHHH!!!",
+      "Loadletter seems pretty confident in his ability to defeat you, and begins to ignore you.",
+      "Perhaps he would consider you as an adversary again if you came back stronger?"
+    ]
+  }
+}

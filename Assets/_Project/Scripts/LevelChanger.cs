@@ -16,8 +16,14 @@ public class LevelChanger : MonoBehaviour {
 	public bool fadeOutAudio = false;
 	AudioSource audio = null;
 
+	public bool exitOnEsc = false;
+
+	static LevelChanger instance;
+
 	void Start()
 	{
+		instance = this;
+
 		if (fadeIn)
 		{
 			CameraFader.current.FadeIn (fadeInDuration);
@@ -27,6 +33,18 @@ public class LevelChanger : MonoBehaviour {
 			audio = GetComponent<AudioSource> ();
 	}
 
+	void Update()
+	{
+		if (exitOnEsc && Input.GetButton ("Cancel"))
+			ChangeLevel ();
+			
+	}
+
+	public static void ChangeScene(string levelName = "")
+	{
+		instance.ChangeLevel (levelName);
+	}
+
 	public void ChangeLevel(string levelName = "")
 	{
 		StartCoroutine (ChangeLevelCoroutine (levelName));
@@ -34,6 +52,8 @@ public class LevelChanger : MonoBehaviour {
 
 	public IEnumerator ChangeLevelCoroutine(string levelName = "")
 	{
+		Debug.Log (levelName);
+
 		float startTime = Time.time;
 		float endTime = startTime + fadeOutDuration;
 
@@ -42,6 +62,7 @@ public class LevelChanger : MonoBehaviour {
 		float startingVolume = 1f;
 		if (audio != null)
 			startingVolume = audio.volume;
+		
 
 		while (Time.time < endTime)
 		{
@@ -56,6 +77,7 @@ public class LevelChanger : MonoBehaviour {
 
 		if (levelName == "")
 			levelName = this.levelName;
+
 
 		SceneManager.LoadScene (levelName);
 	}

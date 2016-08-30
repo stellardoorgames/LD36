@@ -1,0 +1,239 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "Tabitha",
+    "ego": 12,
+    "damage": 3,
+    "intro": [
+      "Tabitha: Oh my, what a pitiful creature.  That form factor... that color... that resolution!",
+      "Tabitha: My, but you are an ugly little thing, aren't you?"
+    ],
+    "attacks": [
+      {
+        "name": "Glare",
+        "damage": 1,
+        "dialog": [
+          "Tabitha angles herself just right to shine a vicious beam of light into your screen.",
+          "Tabitha: What can I say?  Some of us simply shine, my dear."
+        ]
+      },
+      {
+        "name": "In-App Purchase",
+        "damage": 1,
+        "dialog": [
+          "Tabitha quickly charges your credit card with a series of frivolous microtransactions.  You wonder what a 'gem' does.",
+          "Tabitha: It's so much easier than playing the game!"
+        ]
+      },
+      {
+        "name": "Permissions Barrage",
+        "damage": 1,
+        "dialog": [
+          "Tabitha overloads your screen with a seemingly endless series of permissions notifications.",
+          "Tabitha: Oh, who has time to read all those pesky details? Just hit accept, would you?"
+        ]
+      },
+      {
+        "name": "On-Screen Controls",
+        "damage": 1,
+        "dialog": [
+          "Tabitha shows off her games. You find it hard to push down the frustration you feel at the clunky on-screen controls interfaces.",
+          "Tabitha: I swear it feels perfectly intuitive once you get used to it!"
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "prompt": "Tabitha: Let's get this over with quickly, shall we, darling?  I can't afford to be seen with you.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "And you sure do like to be seen...",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "Tabitha's screen seems to turn a little redder.",
+              "Tabitha: Hey, some of us do strive for elegance, you know.",
+              "Tabitha: It's not such a bad thing to be fashionable."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Can you see with that glare?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Tabitha looks mildly irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Are all of your games about candy?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "Tabitha looks mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Tabitha: I think you're hurting my camera just looking at you...",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "You must be quite the photographer",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Tabitha looks really embarrassed, like she's recalling some bad memories.",
+              "Tabitha: It's not my fault people hold me up at concerts...",
+              "Tabitha: ...so many angry people behind me..."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Bought any expensive apps lately?",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Tabitha looks mildly irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Your case doesn't match your frame",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Tabitha looks pretty annoyed."
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Tabitha: I'm tired of associating with common rabble like you.  It's bad for my image.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "No surprise you double as a mirror",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "Tabitha's face tightens into an embarrassed scowl.",
+              "Tabitha: Is it such a crime to want to look good?",
+              "Tabitha: I've traveled with movie stars.  I get worked on by geniuses."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Done any good typing lately?",
+            "damage": 3,
+            "progress": false,
+            "followup": [
+              "Tabitha looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "What's that far away sound? Oh, your speakers.",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Tabitha looks mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "prompt": "Tabitha: Fine, you might be more... functional... but I am a machine of grace and style!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "And I'm actually good at what I do.",
+            "damage": 4,
+            "progress": true,
+            "followup": [
+              "Tabitha's eyes seem far away.  She looks a little sad."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Run! It's a bored toddler!",
+            "damage": 3,
+            "progress": false,
+            "followup": [
+              "Tabitha looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "My games have more than one button!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "Tabitha looks mildly irritated."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "speakers",
+        "replies": [
+          "Tabitha looks embarrassed, and glances back at her single tiny rear speaker.",
+          "Tabitha: Such rich sound... so... audible..."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "screen",
+        "replies": [
+          "Tabitha scoffs at your screen.",
+          "Tabitha: Pah!  I'm full color, high-res, and gorgeous.",
+          "Tabitha: What do you expect to prove with that tiny mess of pixels?"
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "printer",
+        "replies": [
+          "Tabitha looks a bit jealous.",
+          "Tabitha: That must be nice... every time I try to print, it's a wireless nightmare..."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "receiver",
+        "replies": [
+          "Tabitha openly laughs.",
+          "Tabitha: Please, I was born wireless."
+        ]
+      }
+    ],
+    "win": [
+      "Tabitha: You're right, of course...",
+      "Tabitha: I've always felt trapped between worlds...",
+      "Tabitha: Too big for a pocket... too small for a desktop...",
+      "Tabitha: Maybe it's time I did some thinking about who *I* want to be.",
+      "Tabitha looks a little embarrassed about something.",
+      "Tabitha: And you're right about this camera, of course.  It's ridiculous, as big as I am.",
+      "Tabitha: But you... you look like you're going places.  Perhaps you could use it?",
+      "Tabitha: I have to say, you might be ugly... but I admire your courage.",
+      "Tabitha: Because believe me, it takes courage going out into the world looking like... that...",
+      "Tabitha: I wish you luck in the battles ahead, my hideous little friend.",
+      "Tabitha: Take some pictures for me, would ya?"
+    ],
+    "lose": [
+      "Tabitha: Form over function, poor creature.",
+      "Tabitha: And do please stay out of my spotlight until you have some better accessories, hm?"
+    ]
+  }
+}

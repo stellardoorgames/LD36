@@ -10960,7 +10960,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184354}
-  m_LocalRotation: {x: 0.6692245, y: 0.7392582, z: 0.070420034, w: 0.026016038}
+  m_LocalRotation: {x: 0.6692245, y: 0.7392582, z: 0.070420034, w: 0.026016036}
   m_LocalPosition: {x: -0.004097364, y: 0.0023480444, z: 0}
   m_LocalScale: {x: 1, y: 0.99999976, z: 0.99999994}
   m_LocalEulerAnglesHint: {x: -3.9736, y: 172.3548, z: 84.572495}
@@ -11210,9 +11210,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Tabitha
-  life: 8
+  ego: 8
+  damage: 0
   texture: {fileID: 21300000, guid: 15423fc03a9ba7c43b66603868a3ab8c, type: 3}
   textureHurt: {fileID: 21300000, guid: 62abdb919994c40449197cc7f05c020e, type: 3}
+  characterDataString: {fileID: 4900000, guid: d11892dd7d249b242948267a4015821e, type: 3}
   itemPrefab: {fileID: 196604, guid: 813236527ced6cf4597fc3f56d41a158, type: 2}
 --- !u!137 &13784214
 SkinnedMeshRenderer:

@@ -2,10 +2,14 @@
 using System.Collections;
 using TMPro;
 using UnityEngine.UI;
+using System;
+using UnityEngine.Events;
 
 public class ButtonController : MonoBehaviour {
 
-	Ability ability;
+	ItemType type;
+	ReplyData reply;
+
 	TMP_Text text;
 	FightController fightController;
 
@@ -19,20 +23,38 @@ public class ButtonController : MonoBehaviour {
 	
 	}
 
-	public void InitButton(Ability ability, FightController fightController)
+	public void InitButton(string label, ItemType type, FightController fightController)
 	{
-		this.ability = ability;
+		this.type = type;
 		this.fightController = fightController;
 
 		text = GetComponentInChildren<TMP_Text> ();
-		text.text = ability.name;
+		text.text = label;
 
 		Button button = GetComponent<Button> ();
-		button.onClick.AddListener(OnClick);
+		button.onClick.AddListener(OnClickAbility);
 	}
 
-	public void OnClick()
+	public void InitButton(string label, ReplyData reply, FightController fightController)
 	{
-		fightController.UseAbility (ability);
+		this.reply = reply;
+		this.fightController = fightController;
+
+		text = GetComponentInChildren<TMP_Text> ();
+		text.text = label;
+		text.fontSize = 12f;
+
+		Button button = GetComponent<Button> ();
+		button.onClick.AddListener(OnClickTalk);
+	}
+
+	public void OnClickAbility()
+	{
+		fightController.UseAbility (type);
+	}
+
+	public void OnClickTalk()
+	{
+		fightController.UseTalk (reply);
 	}
 }

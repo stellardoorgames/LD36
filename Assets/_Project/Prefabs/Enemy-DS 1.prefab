@@ -7681,11 +7681,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: DS and Eliot
-  life: 8
+  ego: 8
+  damage: 0
   texture: {fileID: 21300000, guid: 7875e019811e25140918f960701db514, type: 3}
   textureHurt: {fileID: 21300000, guid: 390cb46039f3dba4c9a24248d74e2651, type: 3}
+  characterDataString: {fileID: 4900000, guid: 8a7de58cb4eb1d146a860f7aaba16ee3, type: 3}
   itemPrefab: {fileID: 102400, guid: ce4a85595d0bb1c44bb4a14f8a96d7b4, type: 2}
-  introTextA: Only one screen!
 --- !u!137 &13704256
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

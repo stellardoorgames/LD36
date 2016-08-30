@@ -3,6 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
+public class Attack
+{
+	
+}
+
 public enum AbilityType
 {
 	Run,
@@ -21,10 +26,10 @@ public enum AbilityElement
 public class Ability
 {
 	public static Dictionary<AbilityType, Ability> list = new Dictionary<AbilityType, Ability> {
-		{AbilityType.Eye_Strain, new Ability(AbilityType.Eye_Strain, 2f, ItemType.Camera, "Eye Strain", 0.8f)},
-		{AbilityType.Roll_Eyes, new Ability(AbilityType.Roll_Eyes, 2f, ItemType.Camera, "Roll Eyes", 0.8f)},
-		{AbilityType.Smirk, new Ability(AbilityType.Smirk, 1f, ItemType.Camera, "Smirk", 0.8f)},
-		{AbilityType.Run, new Ability(AbilityType.Run, 0f, ItemType.Camera, "Run", 0.8f)}
+		{AbilityType.Eye_Strain, new Ability(AbilityType.Eye_Strain, 2f, ItemType.camera, "Eye Strain", 0.8f)},
+		{AbilityType.Roll_Eyes, new Ability(AbilityType.Roll_Eyes, 2f, ItemType.camera, "Roll Eyes", 0.8f)},
+		{AbilityType.Smirk, new Ability(AbilityType.Smirk, 1f, ItemType.camera, "Smirk", 0.8f)},
+		{AbilityType.Run, new Ability(AbilityType.Run, 0f, ItemType.camera, "Run", 0.8f)}
 	};
 
 	public AbilityType type;

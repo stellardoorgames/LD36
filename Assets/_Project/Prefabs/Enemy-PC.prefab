@@ -11212,9 +11212,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Master Ace
-  life: 8
+  ego: 8
+  damage: 0
   texture: {fileID: 21300000, guid: 407f3d96b7ede3340b7ad5cd1b0ee66e, type: 3}
   textureHurt: {fileID: 21300000, guid: 867f766986934a74b88fadb132f4a7b7, type: 3}
+  characterDataString: {fileID: 4900000, guid: 52f93b1170dc9e345bf4675d2ce00fee, type: 3}
   itemPrefab: {fileID: 100196, guid: 6d2b4a043b24d254da9846c2f65a0369, type: 2}
 --- !u!137 &13755766
 SkinnedMeshRenderer:

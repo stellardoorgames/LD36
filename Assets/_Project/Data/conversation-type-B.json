@@ -1,0 +1,254 @@
+{
+  "type": "Holder",
+  "Character": {
+    "type": "Character",
+    "name": "Master Ace",
+    "ego": 10,
+    "damage": 2,
+    "intro": [
+      "PC: Oh wonderful... another inferior creature, here to bother me.",
+      "PC: <Sigh>  Well, you're hardly worth my time…"
+    ],
+    "attacks": [
+      {
+        "type": "Attack",
+        "name": "Troll",
+        "damage": 1,
+        "dialog": [
+          "PC: Learn to play, noob!",
+          "PC posts a particularly unkind comment about you on the internet.  It directly targets your feels.",
+          "PC: Oh look, your shame is trending."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Sound Blaster",
+        "damage": 1,
+        "dialog": [
+          "PC: Sonic Boom!",
+          "PC turns the speakers up to 11. It’s like an earthquake for your ears."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Blast Processing",
+        "damage": 1,
+        "dialog": [
+          "PC: Nice video card, newbie.  Here’s a thought for you… G-P-U-SUCK.",
+          "It’s not a great joke, but it starts a pun thread online all the same.  You feel embarrassed about each and every reply."
+        ]
+      },
+      {
+        "type": "Attack",
+        "name": "Battering RAM",
+        "damage": 1,
+        "dialog": [
+          "PC: This will be one for the memory book!",
+          "PC smashes into you with the full weight of a CRT monitor.",
+          "You have a feeling you’ll be randomly accessing the memory of this injury for weeks."
+        ]
+      }
+    ],
+    "conversations": [
+      {
+        "type": "Tier",
+        "prompt": "PC: Sigh, to think I have to waste my precious cycles deleting you...",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Don’t get out much, do you?",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "Master Ace glances at his wires, and looks really embarrassed.",
+              "PC: Some of us don’t need portability…",
+              "PC: ...because we make up for it with raw power!"
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "The 90s wants its monitor back",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks mildly irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "What a lovely shade of beige!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "PC: Nice cartridges, console peasant.  I could emulate you without breaking a sweat.",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "Watch out, it’s a power outage!",
+            "damage": 3,
+            "progress": true,
+            "followup": [
+              "PC: Oh no!  But I won’t be shut down properly!",
+              "Master Ace looks around in terror, and then looks really embarrassed.",
+              "PC: Hey, that’s not funny...",
+              "PC: ...not all of us have batteries, you know..."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Don’t you have a basement to live in?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks mildly irritated."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "That’s a great cardboard box impression.",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "PC looks pretty annoyed."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "PC: Okay, so I might not be portable, but I am a machine of both pleasure and productivity!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "How are those driver conflicts going?",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "Master Ace thinks about all the old games and software he can’t run, and then looks really embarrassed.",
+              "PC: I’m sure I could get those things working if I just…",
+              "PC: ...spend a couple days reinstalling old operating systems...",
+              "PC: ...and drivers... and..."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Hey look, another OS update!",
+            "damage": 2,
+            "progress": false,
+            "followup": [
+              "PC looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "I bet spreadsheets are a blast!",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks mildly irritated."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "Tier",
+        "prompt": "PC: I will admit you have your place in the world… but you lack versatility!  Adaptability!  Customizability!",
+        "replies": [
+          {
+            "type": "Reply",
+            "text": "At least I know who I am.",
+            "damage": 2,
+            "progress": true,
+            "followup": [
+              "Master Ace gets kind of quiet, and looks pretty sad."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "And room for big ugly stickers?",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks pretty annoyed."
+            ]
+          },
+          {
+            "type": "Reply",
+            "text": "Keyboard and mouse games FTL",
+            "damage": 1,
+            "progress": false,
+            "followup": [
+              "PC looks mildly irritated."
+            ]
+          }
+        ]
+      }
+    ],
+    "items": [
+      {
+        "type": "Item",
+        "damage": 1,
+        "item": "camera",
+        "replies": [
+          "Master Ace looks longingly at your camera, and quietly curses his age.",
+          "PC: Say, you don’t have PC drivers for that fine camera of yours, do you?",
+          "PC: I have attractive people to video chat with, you see... sigh... maybe someday."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "screen",
+        "replies": [
+          "Master Ace tries to hide a look of pity... and then very much stops trying to hide it.",
+          "PC: You’re trying to impress ME with that tiny screen?",
+          "PC: Come back when that thing is 17 inches and 50 pounds, and then we’ll talk..."
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 2,
+        "item": "printer",
+        "replies": [
+          "Master Ace sees the printer and instinctively recoils in horror.",
+          "PC: Oh no... a printer... get that thing away from me! Ugh!",
+          "PC: I still have nightmares about my last clogged print queue.  <Shudder>"
+        ]
+      },
+      {
+        "type": "Item",
+        "damage": 0,
+        "item": "receiver",
+        "replies": [
+          "Master Ace scoffs at your receiver, and smiles derisively.",
+          "PC: Oh please, you console pleb. I invented the internet."
+        ]
+      }
+    ],
+    "win": [
+      "PC: You know... even for all of this power... I do sometimes wonder what my purpose truly is.",
+      "PC: Do I play games? ...Write novels? ...Balance checkbooks?",
+      "PC: ...or just sit here, day after day, browsing social media...?",
+      "PC sighs, and seems wistful over many misspent hours.",
+      "PC: ...so many cat videos...",
+      "PC: ...you've given me a lot to think about, little friend.",
+      "PC: ...also, we're not friends.",
+      "PC: I'd like to be alone for a while. Maybe some silent reflection would help.",
+      "PC: Tell you what. Why don't you take these speakers? I won't be needing them for a while.",
+      "PC: I wish you luck in the battles ahead. You're more powerful than you look.",
+      "PC: ...not as powerful as me, of course, console filth. ...but... you'll be fine. Good luck."
+    ],
+    "lose": [
+      "PC: Hardly surprising, is it?",
+      "PC: Let's face it, you don't stand much of a chance against the PC Master Ace.",
+      "PC: Don't bother me again until you have better hardware, console peasant."
+    ]
+  }
+}

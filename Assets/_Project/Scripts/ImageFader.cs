@@ -21,7 +21,6 @@ public class ImageFader : MonoBehaviour {
 	public UnityEvent OnEnd;
 
 	Image image;
-	bool hasCalledImage = false;
 
 	void Start ()
 	{
@@ -52,7 +51,7 @@ public class ImageFader : MonoBehaviour {
 		float startTime = Time.time;
 		float endTime = startTime + fadeInDuration;
 
-		while (Time.time < endTime)
+		while (Time.time <= endTime)
 		{
 			float t = Mathf.InverseLerp (startTime, endTime, Time.time);
 			image.color = Color.Lerp (startColor, displayColor, t);
@@ -66,7 +65,7 @@ public class ImageFader : MonoBehaviour {
 		startTime = Time.time;
 		endTime = startTime + fadeOutDuration;
 
-		while (Time.time < endTime)
+		while (Time.time <= endTime)
 		{
 			float t = Mathf.InverseLerp (startTime, endTime, Time.time);
 			image.color = Color.Lerp (displayColor, endColor, t);
@@ -75,6 +74,10 @@ public class ImageFader : MonoBehaviour {
 		}
 
 		OnEnd.Invoke ();
+
+		foreach (Transform t in transform)
+			t.gameObject.SetActive (false);
+		
 	}
 
 	IEnumerator NextImageCoroutine()
@@ -88,6 +91,6 @@ public class ImageFader : MonoBehaviour {
 			if (img != null)
 				img.StartImage ();
 		}
-		
+
 	}
 }
