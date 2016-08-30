@@ -13,8 +13,8 @@ public class LevelChanger : MonoBehaviour {
 	public float fadeInDuration = 1f;
 	public float fadeOutDuration = 1f;
 
-	public bool fadeOutAudio = false;
-	AudioSource audio = null;
+	public bool fadeOutMusic = false;
+	AudioSource music = null;
 
 	public bool exitOnEsc = false;
 
@@ -29,8 +29,8 @@ public class LevelChanger : MonoBehaviour {
 			CameraFader.current.FadeIn (fadeInDuration);
 		}
 
-		if (fadeOutAudio)
-			audio = GetComponent<AudioSource> ();
+		if (fadeOutMusic)
+			music = GetComponent<AudioSource> ();
 	}
 
 	void Update()
@@ -60,16 +60,16 @@ public class LevelChanger : MonoBehaviour {
 		CameraFader.current.FadeOut(fadeOutDuration);
 
 		float startingVolume = 1f;
-		if (audio != null)
-			startingVolume = audio.volume;
+		if (music != null)
+			startingVolume = music.volume;
 		
 
 		while (Time.time < endTime)
 		{
-			if (audio != null)
+			if (music != null)
 			{
 				float t = Mathf.InverseLerp (startTime, endTime, Time.time);
-				audio.volume = Mathf.Lerp (startingVolume, 0f, t);
+				music.volume = Mathf.Lerp (startingVolume, 0f, t);
 			}
 			//TODO my own camera fader
 			yield return null;

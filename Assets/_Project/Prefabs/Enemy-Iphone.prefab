@@ -3272,7 +3272,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 469566}
   - 65: {fileID: 6572972}
-  - 114: {fileID: 11411580}
+  - 114: {fileID: 11450280}
   m_Layer: 0
   m_Name: Enemy-Iphone
   m_TagString: Enemy
@@ -6900,7 +6900,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135182}
-  m_LocalRotation: {x: -0.17021449, y: -0.63383126, z: 0.75254714, w: 0.054386593}
+  m_LocalRotation: {x: -0.17021447, y: -0.6338312, z: 0.752547, w: 0.054386586}
   m_LocalPosition: {x: -0.0000000019371509, y: 0.0000000010430813, z: 3.72529e-10}
   m_LocalScale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_LocalEulerAnglesHint: {x: 69.302795, y: -66.9165, z: 122.63509}
@@ -9328,7 +9328,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109594}
-  m_LocalRotation: {x: 0.6075653, y: -0.6075619, z: 0.36175194, w: 0.36175773}
+  m_LocalRotation: {x: 0.6075652, y: -0.6075618, z: 0.3617519, w: 0.3617577}
   m_LocalPosition: {x: 0.0013866463, y: 0.0024515665, z: 0.002001219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 61.5407, y: -179.99939, z: -90}
@@ -10135,7 +10135,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164508}
-  m_LocalRotation: {x: -0.023161832, y: 0.6989168, z: 0.65636724, w: -0.28312725}
+  m_LocalRotation: {x: -0.02316183, y: 0.69891673, z: 0.6563672, w: -0.28312722}
   m_LocalPosition: {x: 0.005008029, y: -0.0028215395, z: -0.0017063586}
   m_LocalScale: {x: 1.0000013, y: 0.99999803, z: 1.0000007}
   m_LocalEulerAnglesHint: {x: -64.7395, y: -87.0505, z: -71.232796}
@@ -14976,7 +14976,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11411580
+--- !u!114 &11450280
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -14984,12 +14984,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 150360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6431d102103f644968f76682e1997c, type: 3}
+  m_Script: {fileID: 11500000, guid: 27ee356c67629464d9a92f624531dff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: mePhone
   ego: 8
-  damage: 0
   texture: {fileID: 21300000, guid: eaf62aeb324a1c24eb02be0d19413a65, type: 3}
   textureHurt: {fileID: 21300000, guid: 37ffa24f0b6483f4ebd99aee7c290e5f, type: 3}
   characterDataString: {fileID: 4900000, guid: dbddcb1e73182ea4dab72fd512087554, type: 3}

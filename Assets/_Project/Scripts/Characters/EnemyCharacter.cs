@@ -9,17 +9,10 @@ public class EnemyCharacter : Character {
 
 	public GameObject itemPrefab;
 
-	//public string introTextA;
-	//public string introTextB;
-
-	/*public List<string> talkTiers;
-	public List<string> replyTeirs;
-
-	public List<string> attackQuips;*/
-
-	//public List<string> attacks;
-
 	public CharacterData data;
+
+	float damage;
+
 
 	void Awake()
 	{
@@ -27,7 +20,6 @@ public class EnemyCharacter : Character {
 		{
 			CharacterHolder holder = JsonConvert.DeserializeObject<CharacterHolder> (characterDataString.text);
 			data = holder.character;
-			//data = JsonConvert.DeserializeObject<CharacterData> (characterDataString.text);
 		}
 	}
 
@@ -46,15 +38,17 @@ public class EnemyCharacter : Character {
 
 	public AttackData GetRandomAttack()
 	{
-		//Ability[] list = new Ability[abilities.Count];
-		//abilities.CopyTo (list);
-
 		return data.attacks[Random.Range (0, data.attacks.Length - 1)];
 	}
 
-	public virtual string[] TakeAbility(ItemType item)
+	/*public TierData TakeTalk(ReplyData data)
 	{
-		string[] returnVal = new string[1] {". . ."};
+		
+	}*/
+
+	public virtual ItemConversationData TakeAbility(ItemType item)
+	{
+		//string[] returnVal = new string[1] {". . ."};
 
 		ItemConversationData icd = null;
 		foreach(ItemConversationData i in data.items)
@@ -64,15 +58,15 @@ public class EnemyCharacter : Character {
 				icd = i;
 		}
 
-		//Debug.Log (icd.item);
 		if (icd != null)
 		{
-			returnVal = icd.replies;
+			//returnVal = icd.replies;
 			TakeDamage (icd.damage);
 		}
 
-		Debug.Log (returnVal [0]);
-		return returnVal;
+		return icd;
+		//Debug.Log (returnVal [0]);
+		//return returnVal;
 	}
 
 	public override void Die ()

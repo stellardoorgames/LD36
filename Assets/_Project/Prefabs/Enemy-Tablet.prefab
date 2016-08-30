@@ -639,7 +639,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 498268}
   - 65: {fileID: 6515974}
-  - 114: {fileID: 11422162}
+  - 114: {fileID: 11476884}
   m_Layer: 0
   m_Name: Enemy-Tablet
   m_TagString: Enemy
@@ -10960,7 +10960,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 184354}
-  m_LocalRotation: {x: 0.6692245, y: 0.7392582, z: 0.070420034, w: 0.026016036}
+  m_LocalRotation: {x: 0.66922456, y: 0.7392583, z: 0.07042004, w: 0.026016038}
   m_LocalPosition: {x: -0.004097364, y: 0.0023480444, z: 0}
   m_LocalScale: {x: 1, y: 0.99999976, z: 0.99999994}
   m_LocalEulerAnglesHint: {x: -3.9736, y: 172.3548, z: 84.572495}
@@ -11198,7 +11198,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11422162
+--- !u!114 &11476884
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -11206,12 +11206,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 113438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6431d102103f644968f76682e1997c, type: 3}
+  m_Script: {fileID: 11500000, guid: 27ee356c67629464d9a92f624531dff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Tabitha
   ego: 8
-  damage: 0
   texture: {fileID: 21300000, guid: 15423fc03a9ba7c43b66603868a3ab8c, type: 3}
   textureHurt: {fileID: 21300000, guid: 62abdb919994c40449197cc7f05c020e, type: 3}
   characterDataString: {fileID: 4900000, guid: d11892dd7d249b242948267a4015821e, type: 3}

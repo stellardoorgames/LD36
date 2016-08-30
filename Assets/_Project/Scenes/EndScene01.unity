@@ -360,7 +360,7 @@ MonoBehaviour:
   m_text: "Until...\r\n\r\nYou hear a voice from across the cul-de-sac...\r\n\r\nKID:
     Hey... check it out...!  Is that...?\r\n\r\nKID: Oh, it totally is!  it's a GameBox!
     \ The classic!\r\n\r\nKID: ...\r\n\r\nKID: ...what's all this stuff stuck to it...?\r\n\r\nKID:
-    Meh.  We can get rif of all of that...!\r\n"
+    Meh.  We can get rid of all of that...!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e40f922fb012cb4ca8bd41f610cbe3e, type: 2}
   m_sharedMaterial: {fileID: 2103356, guid: 6e40f922fb012cb4ca8bd41f610cbe3e, type: 2}
@@ -426,10 +426,10 @@ MonoBehaviour:
     lineCount: 18
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   nextObject: {fileID: 1288414703}
   nextImageTime: 10
   duration: 10
-  fadeInDuration: 0.5
+  fadeInDuration: 1
   fadeOutDuration: 2
   start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
@@ -836,7 +836,7 @@ MonoBehaviour:
   fadeIn: 1
   fadeInDuration: 1
   fadeOutDuration: 1
-  fadeOutAudio: 0
+  fadeOutMusic: 0
   exitOnEsc: 0
 --- !u!4 &679801308
 Transform:

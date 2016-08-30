@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 public class PlayerCharacter : Character {
+
+	public float maxEgo = 8f;
 
 	public float walkSpeed = 1.0f;
 	public float turnSpeed = 0.3f;
@@ -28,6 +31,12 @@ public class PlayerCharacter : Character {
 
 	public HashSet<ItemType> abilityList;
 
+	public Item item1;
+	public Item item2;
+	public Item item3;
+	public Item item4;
+	public Item item5;
+
 	//public Dictionary<ItemType, GameObject> attachments;
 
 	protected override void Start ()
@@ -49,6 +58,17 @@ public class PlayerCharacter : Character {
 	{
 		if (fightController.isFighting || OptionMenuController.isMenuOpen)
 			return;
+
+		if (Input.GetKeyDown (KeyCode.Alpha1))
+			AddItem (item1);
+		if (Input.GetKeyDown (KeyCode.Alpha2))
+			AddItem (item2);
+		if (Input.GetKeyDown (KeyCode.Alpha3))
+			AddItem (item3);
+		if (Input.GetKeyDown (KeyCode.Alpha4))
+			AddItem (item4);
+		if (Input.GetKeyDown (KeyCode.Alpha5))
+			AddItem (item5);
 
 		Vector3 move = new Vector3 (Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
 
@@ -105,6 +125,9 @@ public class PlayerCharacter : Character {
 
 	void AddItem(Item item)
 	{
+		if (abilityList.Contains (item.type))
+			return;
+
 		items.Add (item);
 		abilityList.Add(item.type);
 

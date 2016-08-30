@@ -161,7 +161,7 @@ public class FightController : MonoBehaviour {
 		{
 			textObject.text = text;// + "\n";
 
-			float endTime = Time.time + dialogDelay;
+			//float endTime = Time.time + dialogDelay;
 
 			yield return StartCoroutine (WaitForPress ());
 			/*while (Time.time < endTime)
@@ -264,22 +264,28 @@ public class FightController : MonoBehaviour {
 
 		abilityMenuObject.SetActive (false);
 		fightMenuObject.SetActive (false);
+		
+		textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.ToString());
 
-		isHit = true;
+		ItemConversationData reply = enemy.TakeAbility (ability);
+
+		string[] replyText = new string[1] {". . ."};
+		isHit = false;
+
+		if (reply != null)
+		{
+			isHit = (reply.damage > 0);
+			replyText = reply.replies;
+		}
+
 		anim.SetBool ("IsHit", isHit);
 		anim.SetTrigger ("Attack1");
-
 		egoEnemyText.text = enemy.ego.ToString ();
-
-		string[] reply = enemy.TakeAbility (ability);
-
-		textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.ToString());
+		
 
 		yield return StartCoroutine (WaitForPress (1f));//new WaitForSeconds (1f);
 
-		DisplayMonologue (reply);
-
-		Debug.Log (reply);
+		yield return StartCoroutine(DisplayMonologue (replyText));
 
 		//yield return new WaitForSeconds (dialogDelay);
 
@@ -310,7 +316,8 @@ public class FightController : MonoBehaviour {
 
 		yield return StartCoroutine(DisplayMonologue (replyData.followup));
 
-		if (isHit && talkTier < enemy.data.conversations.Length - 1)
+		Debug.Log (replyData.progress);
+		if (replyData.progress && talkTier < enemy.data.conversations.Length - 1)
 			talkTier++;
 		
 		EndPlayerTurn ();

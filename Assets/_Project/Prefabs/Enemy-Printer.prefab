@@ -2381,7 +2381,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 493152}
   - 65: {fileID: 6578510}
-  - 114: {fileID: 11442478}
+  - 114: {fileID: 11432308}
   m_Layer: 0
   m_Name: Enemy-Printer
   m_TagString: Enemy
@@ -5961,7 +5961,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130154}
-  m_LocalRotation: {x: -0.024550036, y: 0.8479393, z: -0.52755624, w: 0.04561256}
+  m_LocalRotation: {x: -0.02455004, y: 0.84793943, z: -0.5275563, w: 0.045612562}
   m_LocalPosition: {x: -0.000000002980232, y: 0.0000000032782554, z: 0.0000000013411044}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1}
   m_LocalEulerAnglesHint: {x: 63.1805, y: 166.7702, z: -11.4752}
@@ -5998,7 +5998,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11442478
+--- !u!114 &11432308
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -6006,12 +6006,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 177612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6431d102103f644968f76682e1997c, type: 3}
+  m_Script: {fileID: 11500000, guid: 27ee356c67629464d9a92f624531dff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Loadletter
   ego: 8
-  damage: 0
   texture: {fileID: 21300000, guid: 46c80c4a24e47c54e8d65ab295425e52, type: 3}
   textureHurt: {fileID: 21300000, guid: 816a08f9f62ebf2468d6c7a75504aa9d, type: 3}
   characterDataString: {fileID: 4900000, guid: 62ce92219dffdd64392e455b903afa74, type: 3}
