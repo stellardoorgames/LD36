@@ -360,7 +360,7 @@ MonoBehaviour:
   m_text: "Until...\r\n\r\nYou hear a voice from across the cul-de-sac...\r\n\r\nKID:
     Hey... check it out...!  Is that...?\r\n\r\nKID: Oh, it totally is!  it's a GameBox!
     \ The classic!\r\n\r\nKID: ...\r\n\r\nKID: ...what's all this stuff stuck to it...?\r\n\r\nKID:
-    Meh.  We can get of all of that...!\r\n"
+    Meh.  We can get rif of all of that...!\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6e40f922fb012cb4ca8bd41f610cbe3e, type: 2}
   m_sharedMaterial: {fileID: 2103356, guid: 6e40f922fb012cb4ca8bd41f610cbe3e, type: 2}
@@ -418,18 +418,18 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 556896203}
-    characterCount: 268
+    characterCount: 272
     spriteCount: 0
-    spaceCount: 55
-    wordCount: 44
+    spaceCount: 56
+    wordCount: 45
     linkCount: 0
     lineCount: 18
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0

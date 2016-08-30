@@ -53,10 +53,11 @@ public class ImageFader : MonoBehaviour {
 
 		while (Time.time <= endTime)
 		{
+			yield return null;
+
 			float t = Mathf.InverseLerp (startTime, endTime, Time.time);
 			image.color = Color.Lerp (startColor, displayColor, t);
 
-			yield return null;
 		}
 
 		float waitTime = duration - fadeInDuration - fadeOutDuration;
@@ -67,10 +68,11 @@ public class ImageFader : MonoBehaviour {
 
 		while (Time.time <= endTime)
 		{
+			yield return null;
+
 			float t = Mathf.InverseLerp (startTime, endTime, Time.time);
 			image.color = Color.Lerp (displayColor, endColor, t);
 
-			yield return null;
 		}
 
 		OnEnd.Invoke ();
