@@ -5,27 +5,29 @@ using UnityEngine.Events;
 
 public class ImageFader : MonoBehaviour {
 
+	public bool start = false;
 	public GameObject nextObject;
+	
 	public float nextImageTime = 3f;
-
 	public float duration = 3f;
 	public float fadeInDuration = 0.5f;
 	public float fadeOutDuration = 0.5f;
-
-	public bool start = false;
 
 	public Color startColor = Color.clear;
 	public Color displayColor = Color.white;
 	public Color endColor = Color.clear;
 
+	public GameObject textObject;
+	
 	public UnityEvent OnEnd;
 
 	Image image;
-
+	
 	void Start ()
 	{
 		if (start)
 			StartImage ();
+		
 	}
 
 	/*void OnEnable()
@@ -38,6 +40,9 @@ public class ImageFader : MonoBehaviour {
 		image = GetComponent<Image> ();
 
 		image.color = Color.clear;
+
+		SetTextActive (false);
+
 		gameObject.SetActive (true);
 
 		StartCoroutine (ImageCoroutine ());
@@ -48,6 +53,7 @@ public class ImageFader : MonoBehaviour {
 
 	IEnumerator ImageCoroutine()
 	{
+		//Fadein
 		float startTime = Time.time;
 		float endTime = startTime + fadeInDuration;
 
@@ -60,9 +66,15 @@ public class ImageFader : MonoBehaviour {
 
 		}
 
+		SetTextActive (true);
+
+		//Wait
 		float waitTime = duration - fadeInDuration - fadeOutDuration;
 		yield return new WaitForSeconds (waitTime);
 
+		SetTextActive (false);
+
+		//Fadeout
 		startTime = Time.time;
 		endTime = startTime + fadeOutDuration;
 
@@ -77,9 +89,6 @@ public class ImageFader : MonoBehaviour {
 
 		OnEnd.Invoke ();
 
-		foreach (Transform t in transform)
-			t.gameObject.SetActive (false);
-		
 	}
 
 	IEnumerator NextImageCoroutine()
@@ -94,5 +103,13 @@ public class ImageFader : MonoBehaviour {
 				img.StartImage ();
 		}
 
+	}
+
+	void SetTextActive(bool active)
+	{
+		/*foreach (Transform t in transform)
+			t.gameObject.SetActive (active);*/
+		if (textObject != null)
+			textObject.SetActive (active);
 	}
 }

@@ -499,7 +499,6 @@ RectTransform:
   m_Children:
   - {fileID: 193491726}
   - {fileID: 298430568}
-  - {fileID: 793288216}
   m_Father: {fileID: 1823503463}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -620,15 +619,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1288414703}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -867,15 +867,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1134318533}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -913,8 +914,9 @@ MonoBehaviour:
   fadeIn: 1
   fadeInDuration: 1
   fadeOutDuration: 1
-  fadeOutAudio: 0
-  exitOnEsc: 1
+  fadeOutMusic: 0
+  escapeBehavior: 1
+  optionMenu: {fileID: 0}
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0
@@ -1066,13 +1068,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 664210544}
-  m_Father: {fileID: 521472125}
+  m_Father: {fileID: 1823503463}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 613, y: -226}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -83.5, y: 54.5}
   m_SizeDelta: {x: 107, y: 39}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!114 &793288217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1252,15 +1254,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1675048123}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1346,15 +1349,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1653067421}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1473,15 +1477,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 673307956}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1704,15 +1709,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 1
   nextObject: {fileID: 620984671}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 1
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1765,15 +1771,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1154291491}
   nextImageTime: 4
   duration: 5
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1843,6 +1850,7 @@ RectTransform:
   m_Children:
   - {fileID: 1298186489}
   - {fileID: 521472125}
+  - {fileID: 793288216}
   m_Father: {fileID: 908439661}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}

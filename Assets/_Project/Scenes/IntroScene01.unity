@@ -314,15 +314,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1288414703}
   nextImageTime: 3
   duration: 9
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -408,15 +409,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1048233701}
   nextImageTime: 1.5
   duration: 4.5
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -502,15 +504,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 1
   nextObject: {fileID: 1347699517}
   nextImageTime: 3
   duration: 6
   fadeInDuration: 0.5
   fadeOutDuration: 1.5
-  start: 1
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -548,8 +551,9 @@ MonoBehaviour:
   fadeIn: 1
   fadeInDuration: 1
   fadeOutDuration: 0.01
-  fadeOutAudio: 0
-  exitOnEsc: 0
+  fadeOutMusic: 0
+  escapeBehavior: 1
+  optionMenu: {fileID: 0}
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0
@@ -764,15 +768,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 676352607}
   nextImageTime: 3
   duration: 3
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -858,15 +863,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 673307956}
   nextImageTime: 1.5
   duration: 6
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1016,15 +1022,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 1996682180}
   nextImageTime: 4.5
   duration: 3
   fadeInDuration: 0.5
   fadeOutDuration: 1.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1195,15 +1202,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 1
   nextObject: {fileID: 620984671}
   nextImageTime: 6
   duration: 6
   fadeInDuration: 1
   fadeOutDuration: 1
-  start: 1
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -1407,15 +1415,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674418c143c7c514688c6690fea198e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  start: 0
   nextObject: {fileID: 0}
   nextImageTime: 4
   duration: 4
   fadeInDuration: 0.5
   fadeOutDuration: 0.5
-  start: 0
   startColor: {r: 0, g: 0, b: 0, a: 0}
   displayColor: {r: 1, g: 1, b: 1, a: 1}
   endColor: {r: 0, g: 0, b: 0, a: 0}
+  textObject: {fileID: 0}
   OnEnd:
     m_PersistentCalls:
       m_Calls:

@@ -3,6 +3,15 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using NodeCanvas.Tasks.Actions;
 
+public enum EscBehavior
+{
+	Nothing,
+	ExitScene,
+	ExitGame,
+	OptionMenuOpen,
+	OptionMenuToggle
+}
+
 public class LevelChanger : MonoBehaviour {
 
 	public string levelName;
@@ -16,13 +25,18 @@ public class LevelChanger : MonoBehaviour {
 	public bool fadeOutMusic = false;
 	AudioSource music = null;
 
-	public bool exitOnEsc = false;
+	public EscBehavior escapeBehavior;
+
+	public GameObject optionMenu;
 
 	static LevelChanger instance;
 
 	void Start()
 	{
 		instance = this;
+
+		if (optionMenu != null)
+			optionMenu.SetActive (false);
 
 		if (fadeIn)
 		{
@@ -35,8 +49,26 @@ public class LevelChanger : MonoBehaviour {
 
 	void Update()
 	{
-		if (exitOnEsc && Input.GetButton ("Cancel"))
-			ChangeLevel ();
+		if (Input.GetButton ("Cancel"))
+		{
+			
+			if (escapeBehavior == EscBehavior.ExitGame)
+				Application.Quit ();
+			else if (escapeBehavior == EscBehavior.ExitScene && levelName != "")
+				ChangeLevel ();
+			else if (optionMenu != null)
+			{
+				if (optionMenu.activeSelf == false && (escapeBehavior == EscBehavior.OptionMenuOpen || escapeBehavior == EscBehavior.OptionMenuToggle))
+				{
+					optionMenu.SetActive (true);
+				}
+				else if (escapeBehavior == EscBehavior.OptionMenuToggle)
+				{
+					optionMenu.SetActive(false);
+				}
+			}
+
+		}
 			
 	}
 
