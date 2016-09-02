@@ -187,6 +187,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 81932746}
   - 222: {fileID: 81932747}
+  - 114: {fileID: 81932748}
   m_Layer: 0
   m_Name: Talk Panel
   m_TagString: Untagged
@@ -220,6 +221,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81932745}
+--- !u!114 &81932748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 81932745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &88756412
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +790,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 230542524}
   - 114: {fileID: 230542523}
+  - 114: {fileID: 230542525}
   m_Layer: 0
   m_Name: OptionMenu
   m_TagString: Untagged
@@ -811,6 +824,17 @@ Transform:
   - {fileID: 1536106557}
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &230542525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 230542522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &234010821
 Prefab:
   m_ObjectHideFlags: 0
@@ -1115,6 +1139,7 @@ GameObject:
   - 224: {fileID: 338045788}
   - 222: {fileID: 338045790}
   - 114: {fileID: 338045789}
+  - 114: {fileID: 338045791}
   m_Layer: 0
   m_Name: Confirmation Panel
   m_TagString: Untagged
@@ -1176,6 +1201,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338045787}
+--- !u!114 &338045791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 338045787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &358834451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1236,6 @@ MonoBehaviour:
   background: {fileID: 1769688945}
   normalBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   blackBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
-  fodeOutBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
   fadeDuration: 1
   egoText: {fileID: 1094758316}
   egoEnemyText: {fileID: 578558616}
@@ -1227,6 +1262,9 @@ MonoBehaviour:
   messageTime: 2.5
   isHit: 0
   canvas: {fileID: 284309717}
+  endingScene:
+    m_SceneAsset: {fileID: 102900000, guid: a54433450c0e03246817ae3f718ac98f, type: 3}
+    m_SceneName: EndScene01
   isFighting: 0
 --- !u!1 &375990215
 GameObject:
@@ -3014,10 +3052,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3321,13 +3359,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: MenuScene01
+  defaultExitScene:
+    m_SceneAsset: {fileID: 102900000, guid: d98ce1f6a39a7c14798aad8389a1030b, type: 3}
+    m_SceneName: MenuScene01
+  asychronousLoad: 0
   fadeIn: 1
   fadeInDuration: 1
+  fadeInColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeInAudio: 0
+  fadeOut: 1
   fadeOutDuration: 1
-  fadeOutMusic: 0
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeOutAudio: 1
   escapeBehavior: 3
-  optionMenu: {fileID: 230542522}
+  menu: {fileID: 230542522}
 --- !u!82 &1152909888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4142,6 +4187,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1836153039}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1351521023
@@ -4587,6 +4643,17 @@ MonoBehaviour:
       - m_Target: {fileID: 358834451}
         m_MethodName: DisplayFightMenu
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 81932745}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5995,13 +6062,14 @@ GameObject:
   m_Component:
   - 224: {fileID: 1836153040}
   - 222: {fileID: 1836153041}
+  - 114: {fileID: 1836153042}
   m_Layer: 0
   m_Name: Ability Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1836153040
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6028,6 +6096,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836153039}
+--- !u!114 &1836153042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1836153039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1858870728
 GameObject:
   m_ObjectHideFlags: 0

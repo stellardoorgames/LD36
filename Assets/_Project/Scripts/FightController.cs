@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using TMPro;
-using NodeCanvas.Tasks.Actions;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections.Generic;
@@ -23,7 +22,7 @@ public class FightController : MonoBehaviour {
 	public Image background;
 	public Color normalBackgroundColor = Color.white;
 	public Color blackBackgroundColor = Color.black;
-	public Color fodeOutBackgroundColor = Color.clear;
+	//public Color fodeOutBackgroundColor = Color.clear;
 	public float fadeDuration = 1f;
 
 	public TMP_Text egoText;
@@ -57,6 +56,8 @@ public class FightController : MonoBehaviour {
 	public bool isHit = false;
 
 	public GameObject canvas;
+
+	public SceneField endingScene;
 
 	int talkTier = 0;
 
@@ -131,11 +132,9 @@ public class FightController : MonoBehaviour {
 
 		AudioSource.PlayClipAtPoint (OpenSound, player.transform.position);
 
-		CameraFader.current.FadeIn(fadeInTime);
+		Fader.FadeIn(Color.black, fadeInTime);
 
 		yield return WaitForPress ();//new WaitForSeconds (2f);
-
-		textObject.text = "";
 
 		yield return StartCoroutine (DisplayMonologue (enemy.data.intros));
 
@@ -177,8 +176,8 @@ public class FightController : MonoBehaviour {
 
 	public void DisplayFightMenu()
 	{
-		talkMenuObject.SetActive (false);
-		abilityMenuObject.SetActive (false);
+		//talkMenuObject.SetActive (false);
+		//abilityMenuObject.SetActive (false);
 		fightMenuObject.SetActive (true);
 		foreach (Transform t in talkMenuButtonsObject.transform)
 			Destroy (t.gameObject);
@@ -316,7 +315,6 @@ public class FightController : MonoBehaviour {
 
 		yield return StartCoroutine(DisplayMonologue (replyData.followup));
 
-		Debug.Log (replyData.progress);
 		if (replyData.progress && talkTier < enemy.data.conversations.Length - 1)
 			talkTier++;
 		
@@ -360,7 +358,7 @@ public class FightController : MonoBehaviour {
 
 		anim.SetTrigger ("EnemyAttack1");
 
-		string attackText = string.Format ("{0} used {1}!", enemy.name, enemyAttack.name);
+		string attackText = string.Format ("{0} used {1}!", enemy.data.name, enemyAttack.name);
 
 		if (!isHit)
 		{
@@ -437,7 +435,7 @@ public class FightController : MonoBehaviour {
 		{
 			//LevelChanger lc = GameObject.Find ("SceneController").GetComponent<LevelChanger> ();
 			//lc.ChangeLevel ("EndScene01");
-			LevelChanger.ChangeScene ("EndScene01");
+			LevelChanger.ChangeScene (endingScene);//("EndScene01");
 		}
 		//SceneManager.LoadScene ("EndScene01");
 		
@@ -458,10 +456,11 @@ public class FightController : MonoBehaviour {
 			GameObject.Destroy (buttons [i].gameObject);
 
 		//Fade out
-		CameraFader.current.FadeOut (fadeOutTime);
+		Fader.FadeOut (Color.black, fadeOutTime);
 		yield return new WaitForSeconds (fadeOutTime);//StartCoroutine (WaitForPress ());//
 		//Reset camera
-		CameraFader.current.FadeIn (0f);
+		//Fader.SetToClear ();
+		//Fader.FadeIn (Color.black, 0f);
 
 		player.ego = player.maxEgo;
 

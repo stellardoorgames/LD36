@@ -321,13 +321,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: 
+  defaultExitScene:
+    m_SceneAsset: {fileID: 0}
+    m_SceneName: 
+  asychronousLoad: 0
   fadeIn: 1
-  fadeInDuration: 0
+  fadeInDuration: 1
+  fadeInColor: {r: 1, g: 1, b: 1, a: 1}
+  fadeInAudio: 0
+  fadeOut: 1
   fadeOutDuration: 1
-  fadeOutMusic: 0
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeOutAudio: 1
   escapeBehavior: 2
-  optionMenu: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!82 &106411407
 AudioSource:
   m_ObjectHideFlags: 0

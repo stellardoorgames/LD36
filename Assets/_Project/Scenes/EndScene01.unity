@@ -834,11 +834,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: CreditsScene01
+  defaultExitScene:
+    m_SceneAsset: {fileID: 102900000, guid: 4a8bcf86675ed66479188d6681dc5340, type: 3}
+    m_SceneName: CreditsScene01
   fadeIn: 1
   fadeInDuration: 1
+  fadeOut: 1
   fadeOutDuration: 1
-  fadeOutMusic: 0
+  fadeInAudio: 0
+  fadeOutAudio: 0
   escapeBehavior: 1
   optionMenu: {fileID: 0}
 --- !u!4 &679801308

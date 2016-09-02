@@ -910,13 +910,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelName: MenuScene01
+  defaultExitScene:
+    m_SceneAsset: {fileID: 102900000, guid: d98ce1f6a39a7c14798aad8389a1030b, type: 3}
+    m_SceneName: MenuScene01
+  asychronousLoad: 0
   fadeIn: 1
   fadeInDuration: 1
+  fadeInColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeInAudio: 0
+  fadeOut: 1
   fadeOutDuration: 1
-  fadeOutMusic: 0
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeOutAudio: 1
   escapeBehavior: 1
-  optionMenu: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0

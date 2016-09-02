@@ -1,118 +1,187 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
-using NodeCanvas.Tasks.Actions;
+using System.Collections.Generic;
 
 public enum EscBehavior
 {
 	Nothing,
 	ExitScene,
 	ExitGame,
-	OptionMenuOpen,
-	OptionMenuToggle
+	OpenMenu,
 }
 
 public class LevelChanger : MonoBehaviour {
 
-	public string levelName;
+	public static float loadingProgress = 0f;
+	public static float previousVolume = 1f;
 
+	public SceneField defaultExitScene;
+	public bool asychronousLoad;
+	[Space]
 	public bool fadeIn = true;
-	//public Color fadeInColor = Color.black;
-	//public Color fadeOutColor = Color.black;
 	public float fadeInDuration = 1f;
+	public Color fadeInColor = Color.black;
+	public bool fadeInAudio = false;
+	[Space]
+	public bool fadeOut = true;
 	public float fadeOutDuration = 1f;
-
-	public bool fadeOutMusic = false;
-	AudioSource music = null;
+	public Color fadeOutColor = Color.black;
+	[Tooltip("Note: if using Fade Out Audio, the scene being loaded must also have a Scene Changer component to restore the volume level!")]
+	public bool fadeOutAudio = false;
+	[Space]
 
 	public EscBehavior escapeBehavior;
+	public GameObject menu;
 
-	public GameObject optionMenu;
 
-	static LevelChanger instance;
+	private static LevelChanger instance;
 
 	void Start()
 	{
-		instance = this;
+		//Only to allow a static method access this instance
+		if (instance != null)
+			Debug.Log (string.Format("Warning: There should only be one instance of {0} per scene", name) );
+		else
+			instance = this;
 
-		if (optionMenu != null)
-			optionMenu.SetActive (false);
+		//Audio
+		if (fadeInAudio)
+			AudioListener.volume = 0f;
+		else
+			AudioListener.volume = previousVolume;
 
-		if (fadeIn)
-		{
-			CameraFader.current.FadeIn (fadeInDuration);
-		}
+		//Option Menu
+		if (menu != null)
+			menu.SetActive (false);
 
-		if (fadeOutMusic)
-			music = GetComponent<AudioSource> ();
+		//Start
+		StartScene ();
+
 	}
 
 	void Update()
 	{
-		if (Input.GetButton ("Cancel"))
+		if (Input.GetButtonDown ("Cancel"))
 		{
-			
 			if (escapeBehavior == EscBehavior.ExitGame)
 				Application.Quit ();
-			else if (escapeBehavior == EscBehavior.ExitScene && levelName != "")
+			else if (escapeBehavior == EscBehavior.ExitScene && defaultExitScene != "")
 				ChangeLevel ();
-			else if (optionMenu != null)
+			else if (menu != null)
 			{
-				if (optionMenu.activeSelf == false && (escapeBehavior == EscBehavior.OptionMenuOpen || escapeBehavior == EscBehavior.OptionMenuToggle))
+				if (! CloseOnEscape.CloseTop() && escapeBehavior == EscBehavior.OpenMenu)
 				{
-					optionMenu.SetActive (true);
+					menu.SetActive (true);
 				}
-				else if (escapeBehavior == EscBehavior.OptionMenuToggle)
-				{
-					optionMenu.SetActive(false);
-				}
+
 			}
 
 		}
 			
 	}
 
-	public static void ChangeScene(string levelName = "")
+	void StartScene()
 	{
-		instance.ChangeLevel (levelName);
+		StartCoroutine (StartSceneCoroutine ());
 	}
 
-	public void ChangeLevel(string levelName = "")
+	IEnumerator StartSceneCoroutine()
 	{
-		StartCoroutine (ChangeLevelCoroutine (levelName));
-	}
-
-	public IEnumerator ChangeLevelCoroutine(string levelName = "")
-	{
-		Debug.Log (levelName);
+		if (fadeIn)
+		{
+			Fader.FadeIn (fadeInColor, fadeInDuration);
+		}
 
 		float startTime = Time.time;
-		float endTime = startTime + fadeOutDuration;
-
-		CameraFader.current.FadeOut(fadeOutDuration);
-
-		float startingVolume = 1f;
-		if (music != null)
-			startingVolume = music.volume;
-		
+		float endTime = startTime + fadeInDuration;
 
 		while (Time.time < endTime)
 		{
-			if (music != null)
+			yield return null;
+
+			if (fadeInAudio)
 			{
 				float t = Mathf.InverseLerp (startTime, endTime, Time.time);
-				music.volume = Mathf.Lerp (startingVolume, 0f, t);
+				AudioListener.volume = Mathf.Lerp (0f, previousVolume, t);
 			}
-			//TODO my own camera fader
-			yield return null;
 		}
 
-		if (levelName == "")
-			levelName = this.levelName;
-
-
-		SceneManager.LoadScene (levelName);
 	}
 
+	public static void ChangeScene(SceneField scene = null)
+	{
+		instance.StartCoroutine(instance.ChangeLevelCoroutine(scene));
+	}
+
+	public void ChangeLevel(string sceneName = "")
+	{
+		if (sceneName == "")
+			StartCoroutine (ChangeLevelCoroutine ());
+		else
+		{
+			StartCoroutine (ChangeLevelCoroutine (new SceneField (sceneName)));
+		}
+	}
+	public IEnumerator ChangeLevelCoroutine(SceneField scene = null)
+	{
+		float startTime = Time.time;
+		float endTime = startTime + fadeOutDuration;
+
+		if (fadeOut)
+		{
+			Fader.FadeOut (fadeOutColor, fadeOutDuration);
+		}
+
+		previousVolume = AudioListener.volume;
+
+		while (Time.time < endTime)
+		{
+			yield return null;
+
+			if (fadeOutAudio)
+			{
+				float t = Mathf.InverseLerp (startTime, endTime, Time.time);
+				AudioListener.volume = Mathf.Lerp (previousVolume, 0f, t);
+			}
+
+		}
+
+		if (scene == null)
+			scene = defaultExitScene;
+
+		//LoadScene
+		if (asychronousLoad)
+			AsynchronousLoad (scene);
+		else
+			SceneManager.LoadScene (scene);
+		
+	}
+
+	void AsynchronousLoad (SceneField sceneName)
+	{
+		StartCoroutine(AsynchronousLoadCoroutine (sceneName));
+	}
+	IEnumerator AsynchronousLoadCoroutine (SceneField sceneName)
+	{
+		yield return null;
+
+		AsyncOperation ao = SceneManager.LoadSceneAsync (sceneName);
+		ao.allowSceneActivation = false;
+
+		while (! ao.isDone)
+		{
+			float progress = Mathf.Clamp01(ao.progress / 0.9f);
+
+			Debug.Log("Loading progress: " + (progress * 100) + "%");
+
+			if (ao.progress >= 0.9f)
+			{
+				ao.allowSceneActivation = true;
+			}
+
+			yield return null;
+		}
+	}
 
 }
