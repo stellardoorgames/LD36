@@ -194,7 +194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &81932746
 RectTransform:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 81932745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c3e7696c34052e47adfd63895327e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &88756412
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1152909887}
+      - m_Target: {fileID: 1152909889}
         m_MethodName: ChangeLevel
         m_Mode: 5
         m_Arguments:
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 230542522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c3e7696c34052e47adfd63895327e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &234010821
@@ -1209,7 +1209,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 338045787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c3e7696c34052e47adfd63895327e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &358834451
@@ -2225,10 +2225,10 @@ MonoBehaviour:
     lineCount: 3
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0
@@ -3326,7 +3326,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1152909886}
-  - 114: {fileID: 1152909887}
+  - 114: {fileID: 1152909889}
   - 82: {fileID: 1152909888}
   m_Layer: 0
   m_Name: SceneController
@@ -3348,31 +3348,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
---- !u!114 &1152909887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1152909885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultExitScene:
-    m_SceneAsset: {fileID: 102900000, guid: d98ce1f6a39a7c14798aad8389a1030b, type: 3}
-    m_SceneName: MenuScene01
-  asychronousLoad: 0
-  fadeIn: 1
-  fadeInDuration: 1
-  fadeInColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeInAudio: 0
-  fadeOut: 1
-  fadeOutDuration: 1
-  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
-  fadeOutAudio: 1
-  escapeBehavior: 3
-  menu: {fileID: 230542522}
 --- !u!82 &1152909888
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3447,6 +3422,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1152909889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1152909885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0430aeda17d1d024bae78e62fc1a3469, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultExitScene:
+    m_SceneAsset: {fileID: 102900000, guid: d98ce1f6a39a7c14798aad8389a1030b, type: 3}
+    m_SceneName: MenuScene01
+  asychronousLoad: 0
+  fadeIn: 1
+  fadeInDuration: 1
+  fadeInColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeInAudio: 0
+  fadeOut: 1
+  fadeOutDuration: 1
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
+  fadeOutAudio: 1
+  escapeBehavior: 3
+  menu: {fileID: 230542522}
 --- !u!1 &1162226857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6104,7 +6104,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1836153039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffba779558e01b04bac9699413b4f542, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c3e7696c34052e47adfd63895327e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1858870728
@@ -6627,10 +6627,10 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_uvOffset: {x: 0, y: 0}
   m_uvLineOffset: 0

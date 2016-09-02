@@ -2,14 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
-
-public enum EscBehavior
-{
-	Nothing,
-	ExitScene,
-	ExitGame,
-	OpenMenu,
-}
+using UnityCommon;
 
 public class LevelChanger : MonoBehaviour {
 

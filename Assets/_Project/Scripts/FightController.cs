@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityCommon;
 
 public class FightController : MonoBehaviour {
 
@@ -435,7 +436,7 @@ public class FightController : MonoBehaviour {
 		{
 			//LevelChanger lc = GameObject.Find ("SceneController").GetComponent<LevelChanger> ();
 			//lc.ChangeLevel ("EndScene01");
-			LevelChanger.ChangeScene (endingScene);//("EndScene01");
+			SceneController.ChangeScene (endingScene);//("EndScene01");
 		}
 		//SceneManager.LoadScene ("EndScene01");
 		

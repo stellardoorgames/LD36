@@ -1,0 +1,3 @@
+[submodule "Assets/_Common"]
+	path = Assets/_Common
+	url = https://bitbucket.org/stellardoorgames/common
