@@ -56,7 +56,7 @@ public class PlayerCharacter : Character {
 
 	void Update () 
 	{
-		if (fightController.isFighting || OptionMenuController.isMenuOpen)
+		if (fightController.isFighting)// || OptionMenuController.isMenuOpen)
 			return;
 
 		if (Input.GetKeyDown (KeyCode.Alpha1))

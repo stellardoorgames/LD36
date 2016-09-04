@@ -4,9 +4,6 @@ using System.Collections;
 public class OptionMenuController : MonoBehaviour {
 
 	public static bool isMenuOpen = false;
-
-	public GameObject menuObject;
-
 	// Use this for initialization
 	void Start () {
 	
@@ -14,25 +11,22 @@ public class OptionMenuController : MonoBehaviour {
 
 	void Update () 
 	{
-		if (Input.GetButtonDown("Cancel"))
-		{
-			if (isMenuOpen)
-				CloseOptionMenu ();
-			else
-				OpenOptionMenu ();
-		}
+		
 	}
 
-	public void OpenOptionMenu()
+	void OnEnable()
 	{
+		Debug.Log ("Pause");
+
 		isMenuOpen = true;
-		menuObject.SetActive (true);
+		Time.timeScale = 0f;
 	}
 
-	public void CloseOptionMenu()
+	void OnDisable()
 	{
-		menuObject.SetActive (false);
+		Time.timeScale = 1f;
 		isMenuOpen = false;
-	}
 
+		Debug.Log ("Unpause");
+	}
 }
