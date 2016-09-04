@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using TMPro;
 using UnityEngine.UI;
 using System;
 using UnityEngine.Events;
@@ -10,7 +9,7 @@ public class ButtonController : MonoBehaviour {
 	ItemType type;
 	ReplyData reply;
 
-	TMP_Text text;
+	Text text;
 	FightController fightController;
 
 	// Use this for initialization
@@ -28,7 +27,7 @@ public class ButtonController : MonoBehaviour {
 		this.type = type;
 		this.fightController = fightController;
 
-		text = GetComponentInChildren<TMP_Text> ();
+		text = GetComponentInChildren<Text> ();
 		text.text = label;
 
 		Button button = GetComponent<Button> ();
@@ -40,9 +39,9 @@ public class ButtonController : MonoBehaviour {
 		this.reply = reply;
 		this.fightController = fightController;
 
-		text = GetComponentInChildren<TMP_Text> ();
+		text = GetComponentInChildren<Text> ();
 		text.text = label;
-		text.fontSize = 12f;
+		text.fontSize = 16;
 
 		Button button = GetComponent<Button> ();
 		button.onClick.AddListener(OnClickTalk);

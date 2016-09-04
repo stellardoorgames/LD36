@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections.Generic;
@@ -11,13 +10,13 @@ public class FightController : MonoBehaviour {
 
 	public float dialogDelay = 4f;
 
-	public TMP_Text textObject;
+	public Text textObject;
 
 	public GameObject fightMenuObject;
 	public GameObject abilityMenuObject;
 	public GameObject talkMenuObject;
 	public GameObject talkMenuButtonsObject;
-	public TMP_Text talkMenuText;
+	public Text talkMenuText;
 	public GameObject buttonPrefab;
 	public Image enemyImage;
 	public Image background;
@@ -26,8 +25,8 @@ public class FightController : MonoBehaviour {
 	//public Color fodeOutBackgroundColor = Color.clear;
 	public float fadeDuration = 1f;
 
-	public TMP_Text egoText;
-	public TMP_Text egoEnemyText;
+	public Text egoText;
+	public Text egoEnemyText;
 
 	public Sprite normalFightBackground;
 	//public Sprite postFightBackground;
