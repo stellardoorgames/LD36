@@ -544,21 +544,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 679801306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fb745174eb6984dbb6311075435015, type: 3}
+  m_Script: {fileID: 11500000, guid: 0430aeda17d1d024bae78e62fc1a3469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   defaultExitScene:
     m_SceneAsset: {fileID: 102900000, guid: d98ce1f6a39a7c14798aad8389a1030b, type: 3}
     m_SceneName: MenuScene01
-  asychronosLoad: 0
+  asychronousLoad: 0
   fadeIn: 1
   fadeInDuration: 1
+  fadeInColor: {r: 0, g: 0, b: 0, a: 1}
   fadeInAudio: 0
   fadeOut: 1
   fadeOutDuration: 0.1
+  fadeOutColor: {r: 0, g: 0, b: 0, a: 1}
   fadeOutAudio: 0
   escapeBehavior: 1
-  optionMenu: {fileID: 0}
+  menu: {fileID: 0}
 --- !u!4 &679801308
 Transform:
   m_ObjectHideFlags: 0
