@@ -56,7 +56,7 @@ public class PlayerCharacter : Character {
 
 	void Update () 
 	{
-		if (fightController.isFighting)// || OptionMenuController.isMenuOpen)
+		if (FightController.isFighting)// || OptionMenuController.isMenuOpen)
 			return;
 
 		if (Input.GetKeyDown (KeyCode.Alpha1))
@@ -69,30 +69,7 @@ public class PlayerCharacter : Character {
 			AddItem (item4);
 		if (Input.GetKeyDown (KeyCode.Alpha5))
 			AddItem (item5);
-
-		Vector3 move = new Vector3 (Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
-
-		isIdle = false;
-		isWalking = false;
-
-		if (move.magnitude > 0.1f)
-		{
-			isWalking = true;
-
-			transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation (move, Vector3.up), turnSpeed);
-
-			transform.position += (move * (walkSpeed * Time.deltaTime));
-
-			lastMoveTime = Time.time;
-		}
-		else
-		{
-			if (Time.time > lastMoveTime + waitTime)
-				isIdle = true;
-		}
-
-		animator.SetBool ("IsWalking", isWalking);
-		animator.SetBool ("IsIdle", isIdle);
+		
 	}
 
 	/*public void UpdateItems()
@@ -100,6 +77,24 @@ public class PlayerCharacter : Character {
 		//if (character.)
 		if ()
 	}*/
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (other.tag == "Enemy")
+		{
+			Debug.Log ("Encounter Enemy");
+			EnemyCharacter enemy = other.GetComponent<EnemyCharacter> ();
+			fightController.StartFight (this, enemy);
+		}
+		else if (other.tag == "Item")
+		{
+			Debug.Log ("Pickup Item");
+			Item item = other.GetComponent<Item> ();
+			AddItem (item);
+			GameObject.Destroy (other.gameObject);
+			Debug.Log (items.Count);
+		}
+	}
 
 	void OnTriggerEnter(Collider other)
 	{

@@ -10449,7 +10449,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 60.7, y: 0, z: -16.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -11363,9 +11363,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: Game Box
-  life: 20
+  ego: 8
   texture: {fileID: 0}
   textureHurt: {fileID: 0}
+  maxEgo: 8
   walkSpeed: 10
   turnSpeed: 0.3
   waitTime: 3
@@ -11375,6 +11376,11 @@ MonoBehaviour:
   speakers: {fileID: 158974}
   printer: {fileID: 140926}
   fightController: {fileID: 0}
+  item1: {fileID: 11403594, guid: ce4a85595d0bb1c44bb4a14f8a96d7b4, type: 2}
+  item2: {fileID: 11439196, guid: 813236527ced6cf4597fc3f56d41a158, type: 2}
+  item3: {fileID: 11421858, guid: 6d2b4a043b24d254da9846c2f65a0369, type: 2}
+  item4: {fileID: 11453656, guid: e88afdad68f35fa41ac7c81af1ac79e3, type: 2}
+  item5: {fileID: 11434220, guid: c53bc0611ec37dd4dbf4f4a938e4d1c3, type: 2}
 --- !u!135 &13592142
 SphereCollider:
   m_ObjectHideFlags: 1

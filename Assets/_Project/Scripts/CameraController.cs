@@ -5,6 +5,7 @@ public class CameraController : MonoBehaviour {
 
 	public Transform target;
 
+	[Range(0f, 1f)]
 	public float followSpeed = 0.01f;
 
 	Vector3 velocity;

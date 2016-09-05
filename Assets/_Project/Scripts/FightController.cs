@@ -44,6 +44,8 @@ public class FightController : MonoBehaviour {
 	public AudioClip missSound;
 	public AudioClip victorySound;
 	public AudioClip defeatSound;
+	public AudioClip runSound;
+
 	public AudioClip battleMusic;
 	public AudioClip previousMusic;
 
@@ -66,7 +68,7 @@ public class FightController : MonoBehaviour {
 
 	Animator anim;
 
-	public bool isFighting = false;
+	public static bool isFighting = false;
 
 	void Start () 
 	{
@@ -118,7 +120,7 @@ public class FightController : MonoBehaviour {
 		enemyImage.sprite = enemy.texture;
 
 		GameObject panel = abilityMenuObject.GetComponentInChildren<GridLayoutGroup> ().gameObject;
-		Debug.Log (player.abilityList);
+		//Debug.Log (player.abilityList);
 		foreach(ItemType ability in player.abilityList)
 		{
 			//Debug.Log (ability.type);
@@ -130,7 +132,8 @@ public class FightController : MonoBehaviour {
 
 		textObject.text = string.Format ("You pick a fight with {0}!", enemy.characterName);
 
-		AudioSource.PlayClipAtPoint (OpenSound, player.transform.position);
+		if (OpenSound != null)
+			AudioSource.PlayClipAtPoint (OpenSound, Camera.main.transform.position);
 
 		Fader.FadeIn(Color.black, fadeInTime);
 
@@ -201,19 +204,19 @@ public class FightController : MonoBehaviour {
 		
 		egoEnemyText.text = enemy.ego.ToString ();
 
-		yield return StartCoroutine (WaitForPress (1f));//new WaitForSeconds (1f);
-
 		if (isHit)
 		{
 			textObject.text += "\n\nIt hit!";
-			AudioSource.PlayClipAtPoint (attackSound, player.transform.position);
+			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 		}
 		else
 		{
 			textObject.text += "\n\nIt missed!";
-			AudioSource.PlayClipAtPoint (missSound, player.transform.position);
+			AudioSource.PlayClipAtPoint (missSound, Camera.main.transform.position);
 		}
 
+		yield return StartCoroutine (WaitForPress (1f));//new WaitForSeconds (1f);
+		
 		EndPlayerTurn ();
 		//StartCoroutine (EndPlayerTurn ());
 	}
@@ -249,6 +252,8 @@ public class FightController : MonoBehaviour {
 	{
 		textObject.text = string.Format ("{0} ran away!", player.characterName);
 
+		AudioSource.PlayClipAtPoint (runSound, Camera.main.transform.position);
+
 		EndFight ();
 	}
 
@@ -259,7 +264,7 @@ public class FightController : MonoBehaviour {
 
 	public IEnumerator UseAbilityCoroutine(ItemType ability)
 	{
-		AudioSource.PlayClipAtPoint (SelectSound, player.transform.position);
+		AudioSource.PlayClipAtPoint (SelectSound, Camera.main.transform.position);
 
 		abilityMenuObject.SetActive (false);
 		fightMenuObject.SetActive (false);
@@ -311,7 +316,7 @@ public class FightController : MonoBehaviour {
 		egoEnemyText.text = enemy.ego.ToString ();
 
 		if (isHit)
-			AudioSource.PlayClipAtPoint (attackSound, player.transform.position);
+			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 
 		yield return StartCoroutine(DisplayMonologue (replyData.followup));
 
@@ -363,12 +368,12 @@ public class FightController : MonoBehaviour {
 		if (!isHit)
 		{
 			attackText += "\n\nIt missed!";
-			AudioSource.PlayClipAtPoint (missSound, player.transform.position);
+			AudioSource.PlayClipAtPoint (missSound, Camera.main.transform.position);
 		}
 		else
 		{
 			attackText += "\n\nIt hit!";
-			AudioSource.PlayClipAtPoint (attackSound, player.transform.position);
+			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 		}
 
 		textObject.text = attackText;
