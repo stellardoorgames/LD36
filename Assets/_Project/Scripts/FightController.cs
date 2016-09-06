@@ -10,13 +10,15 @@ public class FightController : MonoBehaviour {
 
 	public float dialogDelay = 4f;
 
-	public Text textObject;
+	//public Text textObject;
+	public TextDisplay textDisplayObject;
 
 	public GameObject fightMenuObject;
 	public GameObject abilityMenuObject;
 	public GameObject talkMenuObject;
 	public GameObject talkMenuButtonsObject;
-	public Text talkMenuText;
+	//public Text talkMenuText;
+	public TextDisplay talkMenuTextDisplay;
 	public GameObject buttonPrefab;
 	public Image enemyImage;
 	public Image background;
@@ -120,61 +122,28 @@ public class FightController : MonoBehaviour {
 		enemyImage.sprite = enemy.texture;
 
 		GameObject panel = abilityMenuObject.GetComponentInChildren<GridLayoutGroup> ().gameObject;
-		//Debug.Log (player.abilityList);
+
 		foreach(ItemType ability in player.abilityList)
 		{
-			//Debug.Log (ability.type);
 			GameObject go = Instantiate (buttonPrefab);
 			go.transform.SetParent (panel.transform);
 			ButtonController bc = go.GetComponent<ButtonController> ();
 			bc.InitButton (ability.ToString(), ability, this);
 		}
 
-		textObject.text = string.Format ("You pick a fight with {0}!", enemy.characterName);
+		//textObject.text = string.Format ("You pick a fight with {0}!", enemy.characterName);
+		textDisplayObject.SetText (string.Format ("You pick a fight with {0}!", enemy.characterName));
 
 		if (OpenSound != null)
 			AudioSource.PlayClipAtPoint (OpenSound, Camera.main.transform.position);
 
 		Fader.FadeIn(Color.black, fadeInTime);
 
-		yield return WaitForPress ();//new WaitForSeconds (2f);
+		yield return WaitForInput ();//new WaitForSeconds (2f);
 
-		yield return StartCoroutine (DisplayMonologue (enemy.data.intros));
+		yield return StartCoroutine (textDisplayObject.DisplayTextCoroutine (enemy.data.intros, enemy.color));
 
 		DisplayFightMenu ();
-	}
-
-	IEnumerator WaitForPress(float maxTime = 0f)
-	{
-		float endTime = (maxTime > 0) ? Time.time + maxTime : float.MaxValue;
-
-		while (Time.time < endTime)
-		{
-			if (Input.anyKeyDown)
-				endTime = Time.time;
-
-			yield return null;
-		}
-	}
-
-	IEnumerator DisplayMonologue(string[] monologue)
-	{
-		foreach(string text in monologue)
-		{
-			textObject.text = text;// + "\n";
-
-			//float endTime = Time.time + dialogDelay;
-
-			yield return StartCoroutine (WaitForPress ());
-			/*while (Time.time < endTime)
-			{
-				if (Input.anyKeyDown)
-					endTime = Time.time;
-				
-				yield return null;
-			}*/
-
-		}
 	}
 
 	public void DisplayFightMenu()
@@ -184,7 +153,8 @@ public class FightController : MonoBehaviour {
 		fightMenuObject.SetActive (true);
 		foreach (Transform t in talkMenuButtonsObject.transform)
 			Destroy (t.gameObject);
-		textObject.text = "";
+		//textObject.text = "";
+		textDisplayObject.ClearText ();
 	}
 
 	public void SelectAttack()
@@ -198,34 +168,45 @@ public class FightController : MonoBehaviour {
 		anim.SetBool ("IsHit", isHit);
 		anim.SetTrigger ("Attack1");
 
-		//string reply = enemy.TakeAbility (ability);
-
-		textObject.text = string.Format ("{0} used {1}.", player.characterName, "Attack");
-		
-		egoEnemyText.text = enemy.ego.ToString ();
-
+		string hitMiss;
 		if (isHit)
 		{
-			textObject.text += "\n\nIt hit!";
+			hitMiss = "It hit!";
 			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 		}
 		else
 		{
-			textObject.text += "\n\nIt missed!";
+			hitMiss = "It missed!";
 			AudioSource.PlayClipAtPoint (missSound, Camera.main.transform.position);
 		}
 
-		yield return StartCoroutine (WaitForPress (1f));//new WaitForSeconds (1f);
+		//textObject.text = string.Format ("{0} used {1}.\n{2}", player.characterName, "Attack", hitMiss);
+		textDisplayObject.SetText (string.Format ("{0} used {1}.\n{2}", player.characterName, "Attack", hitMiss));
+		
+		egoEnemyText.text = enemy.ego.ToString ();
+		
+		yield return StartCoroutine (WaitForInput ());
 		
 		EndPlayerTurn ();
-		//StartCoroutine (EndPlayerTurn ());
 	}
 
 	public void SelectTalk()
 	{
+		StartCoroutine (SelectTalkCoroutine ());
+	}
+
+	public IEnumerator SelectTalkCoroutine()
+	{
 		List<ReplyData> replies = new List<ReplyData> (enemy.data.conversations [talkTier].replies);
 
 		replies.Shuffle ();
+
+		//talkMenuText.text = "";
+		talkMenuTextDisplay.ClearText ();
+		talkMenuObject.SetActive (true);
+
+		yield return StartCoroutine(talkMenuTextDisplay.DisplayTextCoroutine (enemy.data.conversations [talkTier].prompt, enemy.color));
+
 
 		foreach(ReplyData reply in replies)
 		{
@@ -234,68 +215,6 @@ public class FightController : MonoBehaviour {
 			ButtonController bc = go.GetComponent<ButtonController> ();
 			bc.InitButton (reply.text, reply, this);
 		}
-
-		talkMenuText.text = enemy.data.conversations [talkTier].prompt;
-
-		talkMenuObject.SetActive (true);
-		//StartCoroutine (SelectTalkCoroutine());
-	}
-
-	/*public IEnumerator SelectTalkCoroutine()
-	{
-		
-
-
-	}*/
-
-	public void SelectRun()
-	{
-		textObject.text = string.Format ("{0} ran away!", player.characterName);
-
-		AudioSource.PlayClipAtPoint (runSound, Camera.main.transform.position);
-
-		EndFight ();
-	}
-
-	public void UseAbility(ItemType ability)
-	{
-		StartCoroutine (UseAbilityCoroutine (ability));
-	}
-
-	public IEnumerator UseAbilityCoroutine(ItemType ability)
-	{
-		AudioSource.PlayClipAtPoint (SelectSound, Camera.main.transform.position);
-
-		abilityMenuObject.SetActive (false);
-		fightMenuObject.SetActive (false);
-		
-		textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.ToString());
-
-		ItemConversationData reply = enemy.TakeAbility (ability);
-
-		string[] replyText = new string[1] {". . ."};
-		isHit = false;
-
-		if (reply != null)
-		{
-			isHit = (reply.damage > 0);
-			replyText = reply.replies;
-		}
-
-		anim.SetBool ("IsHit", isHit);
-		anim.SetTrigger ("Attack1");
-		egoEnemyText.text = enemy.ego.ToString ();
-		
-
-		yield return StartCoroutine (WaitForPress (1f));//new WaitForSeconds (1f);
-
-		yield return StartCoroutine(DisplayMonologue (replyText));
-
-		//yield return new WaitForSeconds (dialogDelay);
-
-		EndPlayerTurn ();
-		//StartCoroutine (EndPlayerTurn ());
-
 	}
 
 	public void UseTalk(ReplyData reply)
@@ -318,23 +237,71 @@ public class FightController : MonoBehaviour {
 		if (isHit)
 			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 
-		yield return StartCoroutine(DisplayMonologue (replyData.followup));
+
+		yield return StartCoroutine(textDisplayObject.DisplayTextCoroutine (replyData.followup, enemy.color));
+
 
 		if (replyData.progress && talkTier < enemy.data.conversations.Length - 1)
 			talkTier++;
-		
-		EndPlayerTurn ();
-		//StartCoroutine(EndPlayerTurn ());
 
+		yield return StartCoroutine (WaitForInput ());
+
+		EndPlayerTurn ();
+
+	}
+
+	public void UseAbility(ItemType ability)
+	{
+		StartCoroutine (UseAbilityCoroutine (ability));
+	}
+
+	public IEnumerator UseAbilityCoroutine(ItemType ability)
+	{
+		AudioSource.PlayClipAtPoint (SelectSound, Camera.main.transform.position);
+
+		abilityMenuObject.SetActive (false);
+		fightMenuObject.SetActive (false);
+		
+		//textObject.text = string.Format ("{0} used {1}.", player.characterName, ability.ToString());
+		textDisplayObject.SetText (string.Format ("{0} used {1}.", player.characterName, ability.ToString ()));
+
+		ItemConversationData reply = enemy.TakeAbility (ability);
+
+		string[] replyText = new string[1] {". . ."};
+		isHit = false;
+
+		if (reply != null)
+		{
+			isHit = (reply.damage > 0);
+			replyText = reply.replies;
+		}
+
+		anim.SetBool ("IsHit", isHit);
+		anim.SetTrigger ("Attack1");
+		egoEnemyText.text = enemy.ego.ToString ();
+		
+
+		yield return StartCoroutine (WaitForInput ());
+
+		yield return StartCoroutine (textDisplayObject.DisplayTextCoroutine (replyText, enemy.color));
+
+		EndPlayerTurn ();
+
+	}
+
+	public void SelectRun()
+	{
+		//textObject.text = string.Format ("{0} ran away!", player.characterName);
+		textDisplayObject.SetText (string.Format ("{0} ran away!", player.characterName));
+
+		AudioSource.PlayClipAtPoint (runSound, Camera.main.transform.position);
+
+		EndFight ();
 	}
 
 	void EndPlayerTurn()
 	{
-		//yield return new WaitForSeconds(messageTime);
-
 		talkMenuObject.SetActive (false);
-
-
 
 		if (enemy.ego > 0f)
 		{
@@ -353,6 +320,9 @@ public class FightController : MonoBehaviour {
 
 	IEnumerator EnemyTurnCoroutine()
 	{
+		textDisplayObject.ClearText ();
+		yield return new WaitForSeconds (0.5f);
+
 		AttackData enemyAttack = enemy.GetRandomAttack ();
 
 		isHit = player.TakeAttack (enemyAttack.damage);
@@ -360,29 +330,29 @@ public class FightController : MonoBehaviour {
 		egoText.text = player.ego.ToString ();
 		
 		anim.SetBool ("IsHit", isHit);
-
 		anim.SetTrigger ("EnemyAttack1");
 
-		string attackText = string.Format ("{0} used {1}!", enemy.data.name, enemyAttack.name);
+		string attackText;
 
 		if (!isHit)
 		{
-			attackText += "\n\nIt missed!";
+			attackText = "It missed!";
 			AudioSource.PlayClipAtPoint (missSound, Camera.main.transform.position);
 		}
 		else
 		{
-			attackText += "\n\nIt hit!";
+			attackText = "It hit!";
 			AudioSource.PlayClipAtPoint (attackSound, Camera.main.transform.position);
 		}
 
-		textObject.text = attackText;
+		//textObject.text = string.Format ("{0} used {1}!\n{2}", enemy.data.name, enemyAttack.name, attackText);
+		textDisplayObject.SetText (string.Format ("{0} used {1}!\n{2}", enemy.data.name, enemyAttack.name, attackText));
 
-		yield return StartCoroutine (WaitForPress ());//new WaitForSeconds(messageTime);
+		yield return null;
+		yield return StartCoroutine (WaitForInput ());
 
-		textObject.text = "";
-
-		yield return StartCoroutine (DisplayMonologue (enemyAttack.dialog));
+		yield return null;
+		yield return StartCoroutine (textDisplayObject.DisplayTextCoroutine (enemyAttack.dialog, enemy.color));
 
 
 		if (player.ego > 0f)
@@ -405,18 +375,12 @@ public class FightController : MonoBehaviour {
 		
 		StartCoroutine (PlayEnding (enemy.data.win));
 
-		//StartCoroutine (DisplayMonologue (enemy.data.lose));
-
 		enemy.Die ();
 	}
 
 	void Defeat()
 	{
-		//string endingText = string.Format ("You lost.\n\n{0} wins.", enemy.name);
-
 		StartCoroutine (PlayEnding (enemy.data.lose));
-
-		//StartCoroutine (DisplayMonologue (enemy.data.win));
 	}
 
 	IEnumerator PlayEnding(string[] endingText)
@@ -430,20 +394,14 @@ public class FightController : MonoBehaviour {
 			yield return null;
 		}
 
-		textObject.text = "";
 
-		//yield return new WaitForSeconds (messageTime);
-		yield return StartCoroutine(DisplayMonologue (endingText));
+		yield return StartCoroutine (textDisplayObject.DisplayTextCoroutine (endingText, enemy.color));
 
 
 		if (enemy.data.name == "Konia" && enemy.ego <= 0)
 		{
-			//LevelChanger lc = GameObject.Find ("SceneController").GetComponent<LevelChanger> ();
-			//lc.ChangeLevel ("EndScene01");
-			SceneController.ChangeScene (endingScene);//("EndScene01");
+			SceneController.ChangeScene (endingScene);
 		}
-		//SceneManager.LoadScene ("EndScene01");
-		
 
 		EndFight();
 	}
@@ -463,9 +421,6 @@ public class FightController : MonoBehaviour {
 		//Fade out
 		Fader.FadeOut (Color.black, fadeOutTime);
 		yield return new WaitForSeconds (fadeOutTime);//StartCoroutine (WaitForPress ());//
-		//Reset camera
-		//Fader.SetToClear ();
-		//Fader.FadeIn (Color.black, 0f);
 
 		player.ego = player.maxEgo;
 
@@ -478,6 +433,14 @@ public class FightController : MonoBehaviour {
 
 		music.clip = previousMusic;
 		music.Play ();
+	}
+
+	IEnumerator WaitForInput()
+	{
+		while(! Input.anyKeyDown)
+		{
+			yield return null;
+		}
 	}
 
 	//Because unity animation events can't do bools for some reason!

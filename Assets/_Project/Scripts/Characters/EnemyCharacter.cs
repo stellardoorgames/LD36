@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 
 public class EnemyCharacter : Character {
+	
+	public Color color;
 
 	public TextAsset characterDataString;
 

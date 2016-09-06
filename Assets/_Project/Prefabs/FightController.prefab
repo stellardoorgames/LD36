@@ -167,6 +167,7 @@ GameObject:
   - 224: {fileID: 22409626}
   - 222: {fileID: 22273154}
   - 114: {fileID: 11434612}
+  - 114: {fileID: 11492956}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -631,6 +632,7 @@ GameObject:
   - 224: {fileID: 22420040}
   - 222: {fileID: 22291720}
   - 114: {fileID: 11491942}
+  - 114: {fileID: 11425778}
   m_Layer: 0
   m_Name: Text
   m_TagString: Untagged
@@ -854,6 +856,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Back
+--- !u!114 &11425778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb0d5b42110719488ac9e9c8a924cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11427642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -878,11 +891,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogDelay: 4
   textObject: {fileID: 11434612}
+  textDisplayObject: {fileID: 11492956}
   fightMenuObject: {fileID: 109558}
   abilityMenuObject: {fileID: 198392}
   talkMenuObject: {fileID: 115064}
   talkMenuButtonsObject: {fileID: 148770}
   talkMenuText: {fileID: 11491942}
+  talkMenuTextDisplay: {fileID: 11425778}
   buttonPrefab: {fileID: 145502, guid: 61a0af4ba759d6c41b1cafd421c13d9e, type: 2}
   enemyImage: {fileID: 11440030}
   background: {fileID: 11468772}
@@ -900,12 +915,13 @@ MonoBehaviour:
   speakers: {fileID: 163028}
   magnifier: {fileID: 129242}
   printer: {fileID: 137626}
-  OpenSound: {fileID: 8300000, guid: 558dd93f69d03a84390846b6badd6015, type: 3}
+  OpenSound: {fileID: 0}
   SelectSound: {fileID: 8300000, guid: 7524f5ac407eadf4fb499abcfc6fb562, type: 3}
   attackSound: {fileID: 8300000, guid: 76c3b11540aa0174ab2bc561e656edca, type: 3}
   missSound: {fileID: 8300000, guid: 679572eac475ec34d81becb17e75ad8d, type: 3}
   victorySound: {fileID: 0}
   defeatSound: {fileID: 0}
+  runSound: {fileID: 8300000, guid: 4dc8236049ce3aa4d9e397612c2cf6a9, type: 3}
   battleMusic: {fileID: 8300000, guid: 8419e27cfc6229e44a0ec94c03e9a87d, type: 3}
   previousMusic: {fileID: 0}
   music: {fileID: 0}
@@ -2013,10 +2029,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: 'GB used Eye Strain!
-
-
-    It''s super effective!'
+  m_Text: 
+--- !u!114 &11492956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb0d5b42110719488ac9e9c8a924cde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11495098
 MonoBehaviour:
   m_ObjectHideFlags: 1
