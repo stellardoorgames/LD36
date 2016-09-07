@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 9/5/2016 8:34:09 PM-->
+<!--Last exported: 9/6/2016 9:23:11 PM-->
 <Tiled2Unity version="1.0.7.5">
   <AssignMaterial mesh="mesh_0001" material="Map01Tilemap01" />
   <Prefab name="MapCuldesac01" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="1" numTilesWide="48" numTilesHigh="48" tileWidth="256" tileHeight="256" exportScale="0.0625" mapWidthInPixels="12288" mapHeightInPixels="12288">
