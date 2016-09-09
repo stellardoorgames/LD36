@@ -22,9 +22,9 @@ public class PlayerCharacter : Character {
 	public HashSet<Item> items;
 	//public List<Item> items;
 
-	bool isWalking = false;
-	bool isIdle = false;
-	float lastMoveTime;
+	//bool isWalking = false;
+	//bool isIdle = false;
+	//float lastMoveTime;
 	float weight = 0f;
 
 	Animator animator;

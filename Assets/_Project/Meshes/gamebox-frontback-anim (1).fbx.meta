@@ -1,0 +1,3820 @@
+fileFormatVersion: 2
+guid: 70205ae5ee67c684987a1ace7c558e6f
+timeCreated: 1473261869
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Camera
+    100002: chest
+    100004: DEF-chest
+    100006: DEF-chest_end
+    100008: DEF-foot.L
+    100010: DEF-foot.L_end
+    100012: DEF-foot.R
+    100014: DEF-foot.R_end
+    100016: DEF-hips
+    100018: DEF-hips_end
+    100020: DEF-shin.01.L
+    100022: DEF-shin.01.L_end
+    100024: DEF-shin.01.R
+    100026: DEF-shin.01.R_end
+    100028: DEF-shin.02.L
+    100030: DEF-shin.02.L_end
+    100032: DEF-shin.02.R
+    100034: DEF-shin.02.R_end
+    100036: DEF-spine
+    100038: DEF-spine_end
+    100040: DEF-thigh.01.L
+    100042: DEF-thigh.01.L_end
+    100044: DEF-thigh.01.R
+    100046: DEF-thigh.01.R_end
+    100048: DEF-thigh.02.L
+    100050: DEF-thigh.02.R
+    100052: DEF-toe.L
+    100054: DEF-toe.L_end
+    100056: DEF-toe.R
+    100058: DEF-toe.R_end
+    100060: DEF-upper_arm.01.L
+    100062: DEF-upper_arm.01.L_end
+    100064: DEF-upper_arm.01.R
+    100066: DEF-upper_arm.01.R_end
+    100068: DEF-upper_arm.02.L
+    100070: DEF-upper_arm.02.R
+    100072: DEF-upper_arm.L.001.01
+    100074: DEF-upper_arm.L.001.01_end
+    100076: DEF-upper_arm.L.001.02
+    100078: DEF-upper_arm.L.001.02_end
+    100080: DEF-upper_arm.L.002
+    100082: DEF-upper_arm.L.002_end
+    100084: DEF-upper_arm.R.001.01
+    100086: DEF-upper_arm.R.001.01_end
+    100088: DEF-upper_arm.R.001.02
+    100090: DEF-upper_arm.R.001.02_end
+    100092: DEF-upper_arm.R.002
+    100094: DEF-upper_arm.R.002_end
+    100096: elbow_hose.L
+    100098: elbow_hose.L_end
+    100100: elbow_hose.R
+    100102: elbow_hose.R_end
+    100104: elbow_target.ik.L
+    100106: elbow_target.ik.L_end
+    100108: elbow_target.ik.R
+    100110: elbow_target.ik.R_end
+    100112: foot.fk.L
+    100114: foot.fk.R
+    100116: foot.ik.L
+    100118: foot.ik.R
+    100120: foot_roll.ik.L
+    100122: foot_roll.ik.L_end
+    100124: foot_roll.ik.R
+    100126: foot_roll.ik.R_end
+    100128: GameBox-Back
+    100130: GameBox-Front
+    100132: //RootNode
+    100134: hips
+    100136: knee_hose.L
+    100138: knee_hose.L_end
+    100140: knee_hose.R
+    100142: knee_hose.R_end
+    100144: knee_target.ik.L
+    100146: knee_target.ik.L_end
+    100148: knee_target.ik.R
+    100150: knee_target.ik.R_end
+    100152: MCH-chest.flex
+    100154: MCH-chest.flex_s
+    100156: MCH-chest.reverse
+    100158: MCH-chest.reverse_end
+    100160: MCH-chest_fk_ns_ch
+    100162: MCH-chest_fk_ns_ch.001
+    100164: MCH-chest_fk_ns_intr
+    100166: MCH-chest_fk_ns_intr.001
+    100168: MCH-chest_fk_ns_intr.001_end
+    100170: MCH-chest_fk_ns_intr_end
+    100172: MCH-chest_ik_ns_ch
+    100174: MCH-chest_ik_ns_ch.001
+    100176: MCH-chest_ik_ns_intr
+    100178: MCH-chest_ik_ns_intr.001
+    100180: MCH-chest_ik_ns_intr.001_end
+    100182: MCH-chest_ik_ns_intr_end
+    100184: MCH-chest_rh_ns_ch
+    100186: MCH-chest_rh_ns_ch.001
+    100188: MCH-chest_rh_ns_intr
+    100190: MCH-chest_rh_ns_intr.001
+    100192: MCH-chest_rh_ns_intr.001_end
+    100194: MCH-chest_rh_ns_intr_end
+    100196: MCH-elbow_hose_p.L
+    100198: MCH-elbow_hose_p.R
+    100200: MCH-elbow_target.ik_parent.L
+    100202: MCH-elbow_target.ik_parent.R
+    100204: MCH-foot.L
+    100206: MCH-foot.L.001
+    100208: MCH-foot.L.001_end
+    100210: MCH-foot.L.rocker.01
+    100212: MCH-foot.L.rocker.02
+    100214: MCH-foot.L.roll.01
+    100216: MCH-foot.L.roll.02
+    100218: MCH-foot.L_end
+    100220: MCH-foot.R
+    100222: MCH-foot.R.001
+    100224: MCH-foot.R.001_end
+    100226: MCH-foot.R.rocker.01
+    100228: MCH-foot.R.rocker.02
+    100230: MCH-foot.R.roll.01
+    100232: MCH-foot.R.roll.02
+    100234: MCH-foot.R_end
+    100236: MCH-hips.flex
+    100238: MCH-hips.flex_s
+    100240: MCH-hips.reverse
+    100242: MCH-hips.reverse_end
+    100244: MCH-hips_fk_ns_ch
+    100246: MCH-hips_fk_ns_ch.001
+    100248: MCH-hips_fk_ns_intr
+    100250: MCH-hips_fk_ns_intr.001
+    100252: MCH-hips_fk_ns_intr.001_end
+    100254: MCH-hips_fk_ns_intr_end
+    100256: MCH-hips_ik_ns_ch
+    100258: MCH-hips_ik_ns_ch.001
+    100260: MCH-hips_ik_ns_intr
+    100262: MCH-hips_ik_ns_intr.001
+    100264: MCH-hips_ik_ns_intr.001_end
+    100266: MCH-hips_ik_ns_intr_end
+    100268: MCH-hips_rh_ns_ch
+    100270: MCH-hips_rh_ns_ch.001
+    100272: MCH-hips_rh_ns_intr
+    100274: MCH-hips_rh_ns_intr.001
+    100276: MCH-hips_rh_ns_intr.001_end
+    100278: MCH-hips_rh_ns_intr_end
+    100280: MCH-knee_hose_p.L
+    100282: MCH-knee_hose_p.R
+    100284: MCH-knee_target.ik_parent.L
+    100286: MCH-knee_target.ik_parent.R
+    100288: MCH-par_spine
+    100290: MCH-shin.01.L
+    100292: MCH-shin.01.R
+    100294: MCH-shin.ik.L
+    100296: MCH-shin.ik.L_end
+    100298: MCH-shin.ik.R
+    100300: MCH-shin.ik.R_end
+    100302: MCH-shin.junc.L
+    100304: MCH-shin.junc.L_end
+    100306: MCH-shin.junc.R
+    100308: MCH-shin.junc.R_end
+    100310: MCH-shin.nostr.ik.L
+    100312: MCH-shin.nostr.ik.L_end
+    100314: MCH-shin.nostr.ik.R
+    100316: MCH-shin.nostr.ik.R_end
+    100318: MCH-shin.stretch.ik.L
+    100320: MCH-shin.stretch.ik.L_end
+    100322: MCH-shin.stretch.ik.R
+    100324: MCH-shin.stretch.ik.R_end
+    100326: MCH-shin_antistr.fk.L
+    100328: MCH-shin_antistr.fk.R
+    100330: MCH-shin_hose_end_p.L
+    100332: MCH-shin_hose_end_p.R
+    100334: MCH-shin_hose_p.L
+    100336: MCH-shin_hose_p.R
+    100338: MCH-shin_smth.01.L
+    100340: MCH-shin_smth.01.R
+    100342: MCH-spine.flex
+    100344: MCH-spine.flex_s
+    100346: MCH-spine.reverse
+    100348: MCH-spine.reverse_end
+    100350: MCH-sub_chest
+    100352: MCH-sub_chest_end
+    100354: MCH-sub_hips
+    100356: MCH-sub_hips_end
+    100358: MCH-sub_spine
+    100360: MCH-sub_spine_end
+    100362: MCH-thigh.fk.L.socket1
+    100364: MCH-thigh.fk.L.socket1_end
+    100366: MCH-thigh.fk.L.socket2
+    100368: MCH-thigh.fk.R.socket1
+    100370: MCH-thigh.fk.R.socket1_end
+    100372: MCH-thigh.fk.R.socket2
+    100374: MCH-thigh.ik.L
+    100376: MCH-thigh.ik.R
+    100378: MCH-thigh.nostr.ik.L
+    100380: MCH-thigh.nostr.ik.R
+    100382: MCH-thigh.stretch.ik.L
+    100384: MCH-thigh.stretch.ik.L_end
+    100386: MCH-thigh.stretch.ik.R
+    100388: MCH-thigh.stretch.ik.R_end
+    100390: MCH-thigh_antistr.fk.L
+    100392: MCH-thigh_antistr.fk.R
+    100394: MCH-thigh_hose_end_p.L
+    100396: MCH-thigh_hose_end_p.R
+    100398: MCH-thigh_hose_p.L
+    100400: MCH-thigh_hose_p.R
+    100402: MCH-thigh_smth.02.L
+    100404: MCH-thigh_smth.02.L_end
+    100406: MCH-thigh_smth.02.R
+    100408: MCH-thigh_smth.02.R_end
+    100410: MCH-toe.L.parent
+    100412: MCH-toe.L.socket1
+    100414: MCH-toe.L.socket2
+    100416: MCH-toe.L.socket2_end
+    100418: MCH-toe.R.parent
+    100420: MCH-toe.R.socket1
+    100422: MCH-toe.R.socket2
+    100424: MCH-toe.R.socket2_end
+    100426: MCH-upper_arm.fk.L.socket1
+    100428: MCH-upper_arm.fk.L.socket1_end
+    100430: MCH-upper_arm.fk.L.socket2
+    100432: MCH-upper_arm.fk.R.socket1
+    100434: MCH-upper_arm.fk.R.socket1_end
+    100436: MCH-upper_arm.fk.R.socket2
+    100438: MCH-upper_arm.ik.L
+    100440: MCH-upper_arm.ik.R
+    100442: MCH-upper_arm.L.001.01
+    100444: MCH-upper_arm.L.001.ik
+    100446: MCH-upper_arm.L.001.ik_end
+    100448: MCH-upper_arm.L.001.junc
+    100450: MCH-upper_arm.L.001.junc_end
+    100452: MCH-upper_arm.L.001.nostr.ik
+    100454: MCH-upper_arm.L.001.nostr.ik_end
+    100456: MCH-upper_arm.L.001.stretch.ik
+    100458: MCH-upper_arm.L.001.stretch.ik_end
+    100460: MCH-upper_arm.L.001_antistr.fk
+    100462: MCH-upper_arm.L.001_hose_end_p
+    100464: MCH-upper_arm.L.001_hose_p
+    100466: MCH-upper_arm.L.001_smth.01
+    100468: MCH-upper_arm.L.002
+    100470: MCH-upper_arm.L.002_end
+    100472: MCH-upper_arm.L.003
+    100474: MCH-upper_arm.L.003_end
+    100476: MCH-upper_arm.nostr.ik.L
+    100478: MCH-upper_arm.nostr.ik.R
+    100480: MCH-upper_arm.R.001.01
+    100482: MCH-upper_arm.R.001.ik
+    100484: MCH-upper_arm.R.001.ik_end
+    100486: MCH-upper_arm.R.001.junc
+    100488: MCH-upper_arm.R.001.junc_end
+    100490: MCH-upper_arm.R.001.nostr.ik
+    100492: MCH-upper_arm.R.001.nostr.ik_end
+    100494: MCH-upper_arm.R.001.stretch.ik
+    100496: MCH-upper_arm.R.001.stretch.ik_end
+    100498: MCH-upper_arm.R.001_antistr.fk
+    100500: MCH-upper_arm.R.001_hose_end_p
+    100502: MCH-upper_arm.R.001_hose_p
+    100504: MCH-upper_arm.R.001_smth.01
+    100506: MCH-upper_arm.R.002
+    100508: MCH-upper_arm.R.002_end
+    100510: MCH-upper_arm.R.003
+    100512: MCH-upper_arm.R.003_end
+    100514: MCH-upper_arm.stretch.ik.L
+    100516: MCH-upper_arm.stretch.ik.L_end
+    100518: MCH-upper_arm.stretch.ik.R
+    100520: MCH-upper_arm.stretch.ik.R_end
+    100522: MCH-upper_arm_antistr.fk.L
+    100524: MCH-upper_arm_antistr.fk.R
+    100526: MCH-upper_arm_hose_end_p.L
+    100528: MCH-upper_arm_hose_end_p.R
+    100530: MCH-upper_arm_hose_p.L
+    100532: MCH-upper_arm_hose_p.R
+    100534: MCH-upper_arm_smth.02.L
+    100536: MCH-upper_arm_smth.02.L_end
+    100538: MCH-upper_arm_smth.02.R
+    100540: MCH-upper_arm_smth.02.R_end
+    100542: ORG-chest
+    100544: ORG-foot.L
+    100546: ORG-foot.R
+    100548: ORG-heel.02.L
+    100550: ORG-heel.02.L_end
+    100552: ORG-heel.02.R
+    100554: ORG-heel.02.R_end
+    100556: ORG-heel.L
+    100558: ORG-heel.R
+    100560: ORG-hips
+    100562: ORG-shin.L
+    100564: ORG-shin.R
+    100566: ORG-spine
+    100568: ORG-thigh.L
+    100570: ORG-thigh.R
+    100572: ORG-toe.L
+    100574: ORG-toe.R
+    100576: ORG-upper_arm.L
+    100578: ORG-upper_arm.L.001
+    100580: ORG-upper_arm.L.002
+    100582: ORG-upper_arm.R
+    100584: ORG-upper_arm.R.001
+    100586: ORG-upper_arm.R.002
+    100588: rig
+    100590: root
+    100592: shin.fk.L
+    100594: shin.fk.R
+    100596: shin_hose.L
+    100598: shin_hose.L_end
+    100600: shin_hose.R
+    100602: shin_hose.R_end
+    100604: shin_hose_end.L
+    100606: shin_hose_end.L_end
+    100608: shin_hose_end.R
+    100610: shin_hose_end.R_end
+    100612: spine
+    100614: thigh.fk.L
+    100616: thigh.fk.R
+    100618: thigh_hose.L
+    100620: thigh_hose.L_end
+    100622: thigh_hose.R
+    100624: thigh_hose.R_end
+    100626: thigh_hose_end.L
+    100628: thigh_hose_end.L_end
+    100630: thigh_hose_end.R
+    100632: thigh_hose_end.R_end
+    100634: toe.L
+    100636: toe.L_end
+    100638: toe.R
+    100640: toe.R_end
+    100642: torso
+    100644: upper_arm.fk.L
+    100646: upper_arm.fk.R
+    100648: upper_arm.L.001.fk
+    100650: upper_arm.L.001_hose
+    100652: upper_arm.L.001_hose_end
+    100654: upper_arm.L.001_hose_end 1
+    100656: upper_arm.L.001_hose_end_end
+    100658: upper_arm.L.002.fk
+    100660: upper_arm.L.002.ik
+    100662: upper_arm.R.001.fk
+    100664: upper_arm.R.001_hose
+    100666: upper_arm.R.001_hose_end
+    100668: upper_arm.R.001_hose_end 1
+    100670: upper_arm.R.001_hose_end_end
+    100672: upper_arm.R.002.fk
+    100674: upper_arm.R.002.ik
+    100676: upper_arm_hose.L
+    100678: upper_arm_hose.L_end
+    100680: upper_arm_hose.R
+    100682: upper_arm_hose.R_end
+    100684: upper_arm_hose_end.L
+    100686: upper_arm_hose_end.L_end
+    100688: upper_arm_hose_end.R
+    100690: upper_arm_hose_end.R_end
+    100692: VIS-foot.ik.L
+    100694: VIS-foot.ik.L_end
+    100696: VIS-foot.ik.R
+    100698: VIS-foot.ik.R_end
+    100700: VIS-thigh_pole.ik.L
+    100702: VIS-thigh_pole.ik.L_end
+    100704: VIS-thigh_pole.ik.R
+    100706: VIS-thigh_pole.ik.R_end
+    100708: VIS-upper_arm.L.002.ik
+    100710: VIS-upper_arm.L.002.ik_end
+    100712: VIS-upper_arm.R.002.ik
+    100714: VIS-upper_arm.R.002.ik_end
+    100716: VIS-upper_arm_pole.ik.L
+    100718: VIS-upper_arm_pole.ik.L_end
+    100720: VIS-upper_arm_pole.ik.R
+    100722: VIS-upper_arm_pole.ik.R_end
+    400000: Camera
+    400002: chest
+    400004: DEF-chest
+    400006: DEF-chest_end
+    400008: DEF-foot.L
+    400010: DEF-foot.L_end
+    400012: DEF-foot.R
+    400014: DEF-foot.R_end
+    400016: DEF-hips
+    400018: DEF-hips_end
+    400020: DEF-shin.01.L
+    400022: DEF-shin.01.L_end
+    400024: DEF-shin.01.R
+    400026: DEF-shin.01.R_end
+    400028: DEF-shin.02.L
+    400030: DEF-shin.02.L_end
+    400032: DEF-shin.02.R
+    400034: DEF-shin.02.R_end
+    400036: DEF-spine
+    400038: DEF-spine_end
+    400040: DEF-thigh.01.L
+    400042: DEF-thigh.01.L_end
+    400044: DEF-thigh.01.R
+    400046: DEF-thigh.01.R_end
+    400048: DEF-thigh.02.L
+    400050: DEF-thigh.02.R
+    400052: DEF-toe.L
+    400054: DEF-toe.L_end
+    400056: DEF-toe.R
+    400058: DEF-toe.R_end
+    400060: DEF-upper_arm.01.L
+    400062: DEF-upper_arm.01.L_end
+    400064: DEF-upper_arm.01.R
+    400066: DEF-upper_arm.01.R_end
+    400068: DEF-upper_arm.02.L
+    400070: DEF-upper_arm.02.R
+    400072: DEF-upper_arm.L.001.01
+    400074: DEF-upper_arm.L.001.01_end
+    400076: DEF-upper_arm.L.001.02
+    400078: DEF-upper_arm.L.001.02_end
+    400080: DEF-upper_arm.L.002
+    400082: DEF-upper_arm.L.002_end
+    400084: DEF-upper_arm.R.001.01
+    400086: DEF-upper_arm.R.001.01_end
+    400088: DEF-upper_arm.R.001.02
+    400090: DEF-upper_arm.R.001.02_end
+    400092: DEF-upper_arm.R.002
+    400094: DEF-upper_arm.R.002_end
+    400096: elbow_hose.L
+    400098: elbow_hose.L_end
+    400100: elbow_hose.R
+    400102: elbow_hose.R_end
+    400104: elbow_target.ik.L
+    400106: elbow_target.ik.L_end
+    400108: elbow_target.ik.R
+    400110: elbow_target.ik.R_end
+    400112: foot.fk.L
+    400114: foot.fk.R
+    400116: foot.ik.L
+    400118: foot.ik.R
+    400120: foot_roll.ik.L
+    400122: foot_roll.ik.L_end
+    400124: foot_roll.ik.R
+    400126: foot_roll.ik.R_end
+    400128: GameBox-Back
+    400130: GameBox-Front
+    400132: //RootNode
+    400134: hips
+    400136: knee_hose.L
+    400138: knee_hose.L_end
+    400140: knee_hose.R
+    400142: knee_hose.R_end
+    400144: knee_target.ik.L
+    400146: knee_target.ik.L_end
+    400148: knee_target.ik.R
+    400150: knee_target.ik.R_end
+    400152: MCH-chest.flex
+    400154: MCH-chest.flex_s
+    400156: MCH-chest.reverse
+    400158: MCH-chest.reverse_end
+    400160: MCH-chest_fk_ns_ch
+    400162: MCH-chest_fk_ns_ch.001
+    400164: MCH-chest_fk_ns_intr
+    400166: MCH-chest_fk_ns_intr.001
+    400168: MCH-chest_fk_ns_intr.001_end
+    400170: MCH-chest_fk_ns_intr_end
+    400172: MCH-chest_ik_ns_ch
+    400174: MCH-chest_ik_ns_ch.001
+    400176: MCH-chest_ik_ns_intr
+    400178: MCH-chest_ik_ns_intr.001
+    400180: MCH-chest_ik_ns_intr.001_end
+    400182: MCH-chest_ik_ns_intr_end
+    400184: MCH-chest_rh_ns_ch
+    400186: MCH-chest_rh_ns_ch.001
+    400188: MCH-chest_rh_ns_intr
+    400190: MCH-chest_rh_ns_intr.001
+    400192: MCH-chest_rh_ns_intr.001_end
+    400194: MCH-chest_rh_ns_intr_end
+    400196: MCH-elbow_hose_p.L
+    400198: MCH-elbow_hose_p.R
+    400200: MCH-elbow_target.ik_parent.L
+    400202: MCH-elbow_target.ik_parent.R
+    400204: MCH-foot.L
+    400206: MCH-foot.L.001
+    400208: MCH-foot.L.001_end
+    400210: MCH-foot.L.rocker.01
+    400212: MCH-foot.L.rocker.02
+    400214: MCH-foot.L.roll.01
+    400216: MCH-foot.L.roll.02
+    400218: MCH-foot.L_end
+    400220: MCH-foot.R
+    400222: MCH-foot.R.001
+    400224: MCH-foot.R.001_end
+    400226: MCH-foot.R.rocker.01
+    400228: MCH-foot.R.rocker.02
+    400230: MCH-foot.R.roll.01
+    400232: MCH-foot.R.roll.02
+    400234: MCH-foot.R_end
+    400236: MCH-hips.flex
+    400238: MCH-hips.flex_s
+    400240: MCH-hips.reverse
+    400242: MCH-hips.reverse_end
+    400244: MCH-hips_fk_ns_ch
+    400246: MCH-hips_fk_ns_ch.001
+    400248: MCH-hips_fk_ns_intr
+    400250: MCH-hips_fk_ns_intr.001
+    400252: MCH-hips_fk_ns_intr.001_end
+    400254: MCH-hips_fk_ns_intr_end
+    400256: MCH-hips_ik_ns_ch
+    400258: MCH-hips_ik_ns_ch.001
+    400260: MCH-hips_ik_ns_intr
+    400262: MCH-hips_ik_ns_intr.001
+    400264: MCH-hips_ik_ns_intr.001_end
+    400266: MCH-hips_ik_ns_intr_end
+    400268: MCH-hips_rh_ns_ch
+    400270: MCH-hips_rh_ns_ch.001
+    400272: MCH-hips_rh_ns_intr
+    400274: MCH-hips_rh_ns_intr.001
+    400276: MCH-hips_rh_ns_intr.001_end
+    400278: MCH-hips_rh_ns_intr_end
+    400280: MCH-knee_hose_p.L
+    400282: MCH-knee_hose_p.R
+    400284: MCH-knee_target.ik_parent.L
+    400286: MCH-knee_target.ik_parent.R
+    400288: MCH-par_spine
+    400290: MCH-shin.01.L
+    400292: MCH-shin.01.R
+    400294: MCH-shin.ik.L
+    400296: MCH-shin.ik.L_end
+    400298: MCH-shin.ik.R
+    400300: MCH-shin.ik.R_end
+    400302: MCH-shin.junc.L
+    400304: MCH-shin.junc.L_end
+    400306: MCH-shin.junc.R
+    400308: MCH-shin.junc.R_end
+    400310: MCH-shin.nostr.ik.L
+    400312: MCH-shin.nostr.ik.L_end
+    400314: MCH-shin.nostr.ik.R
+    400316: MCH-shin.nostr.ik.R_end
+    400318: MCH-shin.stretch.ik.L
+    400320: MCH-shin.stretch.ik.L_end
+    400322: MCH-shin.stretch.ik.R
+    400324: MCH-shin.stretch.ik.R_end
+    400326: MCH-shin_antistr.fk.L
+    400328: MCH-shin_antistr.fk.R
+    400330: MCH-shin_hose_end_p.L
+    400332: MCH-shin_hose_end_p.R
+    400334: MCH-shin_hose_p.L
+    400336: MCH-shin_hose_p.R
+    400338: MCH-shin_smth.01.L
+    400340: MCH-shin_smth.01.R
+    400342: MCH-spine.flex
+    400344: MCH-spine.flex_s
+    400346: MCH-spine.reverse
+    400348: MCH-spine.reverse_end
+    400350: MCH-sub_chest
+    400352: MCH-sub_chest_end
+    400354: MCH-sub_hips
+    400356: MCH-sub_hips_end
+    400358: MCH-sub_spine
+    400360: MCH-sub_spine_end
+    400362: MCH-thigh.fk.L.socket1
+    400364: MCH-thigh.fk.L.socket1_end
+    400366: MCH-thigh.fk.L.socket2
+    400368: MCH-thigh.fk.R.socket1
+    400370: MCH-thigh.fk.R.socket1_end
+    400372: MCH-thigh.fk.R.socket2
+    400374: MCH-thigh.ik.L
+    400376: MCH-thigh.ik.R
+    400378: MCH-thigh.nostr.ik.L
+    400380: MCH-thigh.nostr.ik.R
+    400382: MCH-thigh.stretch.ik.L
+    400384: MCH-thigh.stretch.ik.L_end
+    400386: MCH-thigh.stretch.ik.R
+    400388: MCH-thigh.stretch.ik.R_end
+    400390: MCH-thigh_antistr.fk.L
+    400392: MCH-thigh_antistr.fk.R
+    400394: MCH-thigh_hose_end_p.L
+    400396: MCH-thigh_hose_end_p.R
+    400398: MCH-thigh_hose_p.L
+    400400: MCH-thigh_hose_p.R
+    400402: MCH-thigh_smth.02.L
+    400404: MCH-thigh_smth.02.L_end
+    400406: MCH-thigh_smth.02.R
+    400408: MCH-thigh_smth.02.R_end
+    400410: MCH-toe.L.parent
+    400412: MCH-toe.L.socket1
+    400414: MCH-toe.L.socket2
+    400416: MCH-toe.L.socket2_end
+    400418: MCH-toe.R.parent
+    400420: MCH-toe.R.socket1
+    400422: MCH-toe.R.socket2
+    400424: MCH-toe.R.socket2_end
+    400426: MCH-upper_arm.fk.L.socket1
+    400428: MCH-upper_arm.fk.L.socket1_end
+    400430: MCH-upper_arm.fk.L.socket2
+    400432: MCH-upper_arm.fk.R.socket1
+    400434: MCH-upper_arm.fk.R.socket1_end
+    400436: MCH-upper_arm.fk.R.socket2
+    400438: MCH-upper_arm.ik.L
+    400440: MCH-upper_arm.ik.R
+    400442: MCH-upper_arm.L.001.01
+    400444: MCH-upper_arm.L.001.ik
+    400446: MCH-upper_arm.L.001.ik_end
+    400448: MCH-upper_arm.L.001.junc
+    400450: MCH-upper_arm.L.001.junc_end
+    400452: MCH-upper_arm.L.001.nostr.ik
+    400454: MCH-upper_arm.L.001.nostr.ik_end
+    400456: MCH-upper_arm.L.001.stretch.ik
+    400458: MCH-upper_arm.L.001.stretch.ik_end
+    400460: MCH-upper_arm.L.001_antistr.fk
+    400462: MCH-upper_arm.L.001_hose_end_p
+    400464: MCH-upper_arm.L.001_hose_p
+    400466: MCH-upper_arm.L.001_smth.01
+    400468: MCH-upper_arm.L.002
+    400470: MCH-upper_arm.L.002_end
+    400472: MCH-upper_arm.L.003
+    400474: MCH-upper_arm.L.003_end
+    400476: MCH-upper_arm.nostr.ik.L
+    400478: MCH-upper_arm.nostr.ik.R
+    400480: MCH-upper_arm.R.001.01
+    400482: MCH-upper_arm.R.001.ik
+    400484: MCH-upper_arm.R.001.ik_end
+    400486: MCH-upper_arm.R.001.junc
+    400488: MCH-upper_arm.R.001.junc_end
+    400490: MCH-upper_arm.R.001.nostr.ik
+    400492: MCH-upper_arm.R.001.nostr.ik_end
+    400494: MCH-upper_arm.R.001.stretch.ik
+    400496: MCH-upper_arm.R.001.stretch.ik_end
+    400498: MCH-upper_arm.R.001_antistr.fk
+    400500: MCH-upper_arm.R.001_hose_end_p
+    400502: MCH-upper_arm.R.001_hose_p
+    400504: MCH-upper_arm.R.001_smth.01
+    400506: MCH-upper_arm.R.002
+    400508: MCH-upper_arm.R.002_end
+    400510: MCH-upper_arm.R.003
+    400512: MCH-upper_arm.R.003_end
+    400514: MCH-upper_arm.stretch.ik.L
+    400516: MCH-upper_arm.stretch.ik.L_end
+    400518: MCH-upper_arm.stretch.ik.R
+    400520: MCH-upper_arm.stretch.ik.R_end
+    400522: MCH-upper_arm_antistr.fk.L
+    400524: MCH-upper_arm_antistr.fk.R
+    400526: MCH-upper_arm_hose_end_p.L
+    400528: MCH-upper_arm_hose_end_p.R
+    400530: MCH-upper_arm_hose_p.L
+    400532: MCH-upper_arm_hose_p.R
+    400534: MCH-upper_arm_smth.02.L
+    400536: MCH-upper_arm_smth.02.L_end
+    400538: MCH-upper_arm_smth.02.R
+    400540: MCH-upper_arm_smth.02.R_end
+    400542: ORG-chest
+    400544: ORG-foot.L
+    400546: ORG-foot.R
+    400548: ORG-heel.02.L
+    400550: ORG-heel.02.L_end
+    400552: ORG-heel.02.R
+    400554: ORG-heel.02.R_end
+    400556: ORG-heel.L
+    400558: ORG-heel.R
+    400560: ORG-hips
+    400562: ORG-shin.L
+    400564: ORG-shin.R
+    400566: ORG-spine
+    400568: ORG-thigh.L
+    400570: ORG-thigh.R
+    400572: ORG-toe.L
+    400574: ORG-toe.R
+    400576: ORG-upper_arm.L
+    400578: ORG-upper_arm.L.001
+    400580: ORG-upper_arm.L.002
+    400582: ORG-upper_arm.R
+    400584: ORG-upper_arm.R.001
+    400586: ORG-upper_arm.R.002
+    400588: rig
+    400590: root
+    400592: shin.fk.L
+    400594: shin.fk.R
+    400596: shin_hose.L
+    400598: shin_hose.L_end
+    400600: shin_hose.R
+    400602: shin_hose.R_end
+    400604: shin_hose_end.L
+    400606: shin_hose_end.L_end
+    400608: shin_hose_end.R
+    400610: shin_hose_end.R_end
+    400612: spine
+    400614: thigh.fk.L
+    400616: thigh.fk.R
+    400618: thigh_hose.L
+    400620: thigh_hose.L_end
+    400622: thigh_hose.R
+    400624: thigh_hose.R_end
+    400626: thigh_hose_end.L
+    400628: thigh_hose_end.L_end
+    400630: thigh_hose_end.R
+    400632: thigh_hose_end.R_end
+    400634: toe.L
+    400636: toe.L_end
+    400638: toe.R
+    400640: toe.R_end
+    400642: torso
+    400644: upper_arm.fk.L
+    400646: upper_arm.fk.R
+    400648: upper_arm.L.001.fk
+    400650: upper_arm.L.001_hose
+    400652: upper_arm.L.001_hose_end
+    400654: upper_arm.L.001_hose_end 1
+    400656: upper_arm.L.001_hose_end_end
+    400658: upper_arm.L.002.fk
+    400660: upper_arm.L.002.ik
+    400662: upper_arm.R.001.fk
+    400664: upper_arm.R.001_hose
+    400666: upper_arm.R.001_hose_end
+    400668: upper_arm.R.001_hose_end 1
+    400670: upper_arm.R.001_hose_end_end
+    400672: upper_arm.R.002.fk
+    400674: upper_arm.R.002.ik
+    400676: upper_arm_hose.L
+    400678: upper_arm_hose.L_end
+    400680: upper_arm_hose.R
+    400682: upper_arm_hose.R_end
+    400684: upper_arm_hose_end.L
+    400686: upper_arm_hose_end.L_end
+    400688: upper_arm_hose_end.R
+    400690: upper_arm_hose_end.R_end
+    400692: VIS-foot.ik.L
+    400694: VIS-foot.ik.L_end
+    400696: VIS-foot.ik.R
+    400698: VIS-foot.ik.R_end
+    400700: VIS-thigh_pole.ik.L
+    400702: VIS-thigh_pole.ik.L_end
+    400704: VIS-thigh_pole.ik.R
+    400706: VIS-thigh_pole.ik.R_end
+    400708: VIS-upper_arm.L.002.ik
+    400710: VIS-upper_arm.L.002.ik_end
+    400712: VIS-upper_arm.R.002.ik
+    400714: VIS-upper_arm.R.002.ik_end
+    400716: VIS-upper_arm_pole.ik.L
+    400718: VIS-upper_arm_pole.ik.L_end
+    400720: VIS-upper_arm_pole.ik.R
+    400722: VIS-upper_arm_pole.ik.R_end
+    4300000: GameBox-Front
+    4300002: GameBox-Back
+    7400000: rig|Idle
+    7400002: rig|Walk
+    7400004: rig|Walk.001
+    7400006: GameBox-Front|Idle
+    9500000: //RootNode
+    13700000: GameBox-Back
+    13700002: GameBox-Front
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: rig|Idle
+      takeName: rig|Idle
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: GameBox-Back
+        weight: 1
+      - path: GameBox-Front
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/DEF-hips
+        weight: 1
+      - path: rig/root/DEF-hips/DEF-hips_end
+        weight: 1
+      - path: rig/root/foot.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end
+        weight: 1
+      - path: rig/root/foot.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik/MCH-upper_arm.L.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik/MCH-upper_arm.L.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik/MCH-upper_arm.L.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik/MCH-upper_arm.R.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik/MCH-upper_arm.R.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik/MCH-upper_arm.R.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L/DEF-upper_arm.01.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end/upper_arm.L.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose/upper_arm.L.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R/DEF-upper_arm.01.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end/upper_arm.R.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose/upper_arm.R.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L/DEF-thigh.01.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R/DEF-thigh.01.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002/MCH-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002/MCH-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine/DEF-spine_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest/DEF-chest_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr/MCH-chest_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001/MCH-chest_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr/MCH-chest_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001/MCH-chest_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr/MCH-chest_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001/MCH-chest_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc/MCH-upper_arm.L.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02/DEF-upper_arm.L.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01/DEF-upper_arm.L.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002/DEF-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc/MCH-upper_arm.R.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02/DEF-upper_arm.R.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01/DEF-upper_arm.R.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002/DEF-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L/DEF-shin.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L/DEF-shin.01.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L/DEF-foot.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L/DEF-toe.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R/DEF-shin.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R/DEF-shin.01.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R/DEF-foot.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R/DEF-toe.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end
+        weight: 1
+      - path: rig/root/torso
+        weight: 1
+      - path: rig/root/torso/chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end
+        weight: 1
+      - path: rig/root/torso/hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003/MCH-upper_arm.L.003_end
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003/MCH-upper_arm.R.003_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik/VIS-upper_arm.L.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik/VIS-upper_arm.R.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: rig|Walk
+      takeName: rig|Walk
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: GameBox-Back
+        weight: 1
+      - path: GameBox-Front
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/DEF-hips
+        weight: 1
+      - path: rig/root/DEF-hips/DEF-hips_end
+        weight: 1
+      - path: rig/root/foot.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end
+        weight: 1
+      - path: rig/root/foot.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik/MCH-upper_arm.L.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik/MCH-upper_arm.L.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik/MCH-upper_arm.L.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik/MCH-upper_arm.R.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik/MCH-upper_arm.R.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik/MCH-upper_arm.R.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L/DEF-upper_arm.01.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end/upper_arm.L.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose/upper_arm.L.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R/DEF-upper_arm.01.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end/upper_arm.R.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose/upper_arm.R.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L/DEF-thigh.01.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R/DEF-thigh.01.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002/MCH-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002/MCH-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine/DEF-spine_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest/DEF-chest_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr/MCH-chest_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001/MCH-chest_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr/MCH-chest_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001/MCH-chest_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr/MCH-chest_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001/MCH-chest_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc/MCH-upper_arm.L.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02/DEF-upper_arm.L.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01/DEF-upper_arm.L.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002/DEF-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc/MCH-upper_arm.R.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02/DEF-upper_arm.R.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01/DEF-upper_arm.R.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002/DEF-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L/DEF-shin.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L/DEF-shin.01.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L/DEF-foot.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L/DEF-toe.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R/DEF-shin.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R/DEF-shin.01.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R/DEF-foot.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R/DEF-toe.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end
+        weight: 1
+      - path: rig/root/torso
+        weight: 1
+      - path: rig/root/torso/chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end
+        weight: 1
+      - path: rig/root/torso/hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003/MCH-upper_arm.L.003_end
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003/MCH-upper_arm.R.003_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik/VIS-upper_arm.L.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik/VIS-upper_arm.R.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: rig|Walk.001
+      takeName: rig|Walk.001
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: GameBox-Back
+        weight: 1
+      - path: GameBox-Front
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/DEF-hips
+        weight: 1
+      - path: rig/root/DEF-hips/DEF-hips_end
+        weight: 1
+      - path: rig/root/foot.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end
+        weight: 1
+      - path: rig/root/foot.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik/MCH-upper_arm.L.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik/MCH-upper_arm.L.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik/MCH-upper_arm.L.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik/MCH-upper_arm.R.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik/MCH-upper_arm.R.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik/MCH-upper_arm.R.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L/DEF-upper_arm.01.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end/upper_arm.L.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose/upper_arm.L.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R/DEF-upper_arm.01.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end/upper_arm.R.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose/upper_arm.R.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L/DEF-thigh.01.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R/DEF-thigh.01.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002/MCH-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002/MCH-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine/DEF-spine_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest/DEF-chest_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr/MCH-chest_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001/MCH-chest_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr/MCH-chest_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001/MCH-chest_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr/MCH-chest_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001/MCH-chest_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc/MCH-upper_arm.L.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02/DEF-upper_arm.L.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01/DEF-upper_arm.L.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002/DEF-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc/MCH-upper_arm.R.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02/DEF-upper_arm.R.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01/DEF-upper_arm.R.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002/DEF-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L/DEF-shin.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L/DEF-shin.01.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L/DEF-foot.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L/DEF-toe.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R/DEF-shin.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R/DEF-shin.01.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R/DEF-foot.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R/DEF-toe.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end
+        weight: 1
+      - path: rig/root/torso
+        weight: 1
+      - path: rig/root/torso/chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end
+        weight: 1
+      - path: rig/root/torso/hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003/MCH-upper_arm.L.003_end
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003/MCH-upper_arm.R.003_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik/VIS-upper_arm.L.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik/VIS-upper_arm.R.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GameBox-Front|Idle
+      takeName: GameBox-Front|Idle
+      firstFrame: 0
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: GameBox-Back
+        weight: 1
+      - path: GameBox-Front
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/DEF-hips
+        weight: 1
+      - path: rig/root/DEF-hips/DEF-hips_end
+        weight: 1
+      - path: rig/root/foot.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L
+        weight: 1
+      - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L
+        weight: 1
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end
+        weight: 1
+      - path: rig/root/foot.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R
+        weight: 1
+      - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R
+        weight: 1
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-chest_fk_ns_ch.001/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.ik.L/MCH-upper_arm.L.001.ik/MCH-upper_arm.L.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.L.001.stretch.ik/MCH-upper_arm.L.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.nostr.ik.L/MCH-upper_arm.L.001.nostr.ik/MCH-upper_arm.L.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.ik.R/MCH-upper_arm.R.001.ik/MCH-upper_arm.R.001.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.nostr.ik.R/MCH-upper_arm.R.001.nostr.ik/MCH-upper_arm.R.001.nostr.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.R.001.stretch.ik/MCH-upper_arm.R.001.stretch.ik_end
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-chest_ik_ns_ch.001/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/DEF-upper_arm.01.L/DEF-upper_arm.01.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_end_p/upper_arm.L.001_hose_end/upper_arm.L.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm.L.001_hose_p/upper_arm.L.001_hose/upper_arm.L.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/DEF-upper_arm.01.R/DEF-upper_arm.01.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_end_p/upper_arm.R.001_hose_end/upper_arm.R.001_hose_end_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm.R.001_hose_p/upper_arm.R.001_hose/upper_arm.R.001_hose_end
+          1
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R
+        weight: 1
+      - path: rig/root/MCH-chest_rh_ns_ch.001/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1
+        weight: 1
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R
+        weight: 1
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/DEF-thigh.01.L/DEF-thigh.01.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/DEF-thigh.01.R/DEF-thigh.01.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R
+        weight: 1
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R
+        weight: 1
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R
+        weight: 1
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/upper_arm.L.001.fk/MCH-upper_arm.L.001_antistr.fk/upper_arm.L.002.fk/MCH-upper_arm.L.002/MCH-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002
+        weight: 1
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/upper_arm.R.001.fk/MCH-upper_arm.R.001_antistr.fk/upper_arm.R.002.fk/MCH-upper_arm.R.002/MCH-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine
+        weight: 1
+      - path: rig/root/ORG-hips/DEF-spine/DEF-spine_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/DEF-chest/DEF-chest_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr/MCH-chest_fk_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_fk_ns_intr.001/MCH-chest_fk_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr/MCH-chest_ik_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_ik_ns_intr.001/MCH-chest_ik_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr/MCH-chest_rh_ns_intr_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-chest_rh_ns_intr.001/MCH-chest_rh_ns_intr.001_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/DEF-upper_arm.02.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/MCH-upper_arm.L.001.junc/MCH-upper_arm.L.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/DEF-upper_arm.L.001.02/DEF-upper_arm.L.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/MCH-upper_arm.L.001.01/MCH-upper_arm.L.001_smth.01/DEF-upper_arm.L.001.01/DEF-upper_arm.L.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.L/ORG-upper_arm.L.001/ORG-upper_arm.L.002/DEF-upper_arm.L.002/DEF-upper_arm.L.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/DEF-upper_arm.02.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/MCH-upper_arm.R.001.junc/MCH-upper_arm.R.001.junc_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/DEF-upper_arm.R.001.02/DEF-upper_arm.R.001.02_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/MCH-upper_arm.R.001.01/MCH-upper_arm.R.001_smth.01/DEF-upper_arm.R.001.01/DEF-upper_arm.R.001.01_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-upper_arm.R/ORG-upper_arm.R.001/ORG-upper_arm.R.002/DEF-upper_arm.R.002/DEF-upper_arm.R.002_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/DEF-thigh.02.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/DEF-shin.02.L/DEF-shin.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/DEF-shin.01.L/DEF-shin.01.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/DEF-foot.L/DEF-foot.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/DEF-toe.L/DEF-toe.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/DEF-thigh.02.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/DEF-shin.02.R/DEF-shin.02.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/DEF-shin.01.R/DEF-shin.01.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/DEF-foot.R/DEF-foot.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/DEF-toe.R/DEF-toe.R_end
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R
+        weight: 1
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end
+        weight: 1
+      - path: rig/root/torso
+        weight: 1
+      - path: rig/root/torso/chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest
+        weight: 1
+      - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end
+        weight: 1
+      - path: rig/root/torso/hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse
+        weight: 1
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips
+        weight: 1
+      - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine
+        weight: 1
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003
+        weight: 1
+      - path: rig/root/upper_arm.L.002.ik/MCH-upper_arm.L.003/MCH-upper_arm.L.003_end
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003
+        weight: 1
+      - path: rig/root/upper_arm.R.002.ik/MCH-upper_arm.R.003/MCH-upper_arm.R.003_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L
+        weight: 1
+      - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R
+        weight: 1
+      - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.L.002.ik/VIS-upper_arm.L.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik
+        weight: 1
+      - path: rig/root/VIS-upper_arm.R.002.ik/VIS-upper_arm.R.002.ik_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R
+        weight: 1
+      - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

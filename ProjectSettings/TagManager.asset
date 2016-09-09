@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Item
+  - CameraFollow
   layers:
   - Default
   - TransparentFX

@@ -885,7 +885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f026018e89edcf4a90aaed570359ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 2134574702}
+  FollowTag: CameraFollow
   followSpeed: 0.01
 --- !u!4 &1396584580
 Transform:
@@ -1277,7 +1277,7 @@ GameObject:
   - 114: {fileID: 2134574707}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: CameraFollow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
