@@ -7,12 +7,78 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: mesh_0001
+    100004: mesh_tile_0065
+    100006: mesh_tile_0066
+    100008: mesh_tile_0067
+    100010: mesh_tile_0068
+    100012: mesh_tile_0069
+    100014: mesh_tile_0073
+    100016: mesh_tile_0074
+    100018: mesh_tile_0076
+    100020: mesh_tile_0077
+    100022: mesh_tile_0081
+    100024: mesh_tile_0082
     400000: //RootNode
     400002: mesh_0001
+    400004: mesh_tile_0065
+    400006: mesh_tile_0066
+    400008: mesh_tile_0067
+    400010: mesh_tile_0068
+    400012: mesh_tile_0069
+    400014: mesh_tile_0073
+    400016: mesh_tile_0074
+    400018: mesh_tile_0076
+    400020: mesh_tile_0077
+    400022: mesh_tile_0081
+    400024: mesh_tile_0082
     2300000: mesh_0001
+    2300002: mesh_tile_0065
+    2300004: mesh_tile_0066
+    2300006: mesh_tile_0067
+    2300008: mesh_tile_0068
+    2300010: mesh_tile_0069
+    2300012: mesh_tile_0073
+    2300014: mesh_tile_0074
+    2300016: mesh_tile_0076
+    2300018: mesh_tile_0077
+    2300020: mesh_tile_0081
+    2300022: mesh_tile_0082
     3300000: mesh_0001
+    3300002: mesh_tile_0065
+    3300004: mesh_tile_0066
+    3300006: mesh_tile_0067
+    3300008: mesh_tile_0068
+    3300010: mesh_tile_0069
+    3300012: mesh_tile_0073
+    3300014: mesh_tile_0074
+    3300016: mesh_tile_0076
+    3300018: mesh_tile_0077
+    3300020: mesh_tile_0081
+    3300022: mesh_tile_0082
     4300000: mesh_0001
+    4300002: mesh_tile_0065
+    4300004: mesh_tile_0066
+    4300006: mesh_tile_0067
+    4300008: mesh_tile_0068
+    4300010: mesh_tile_0069
+    4300012: mesh_tile_0073
+    4300014: mesh_tile_0074
+    4300016: mesh_tile_0076
+    4300018: mesh_tile_0077
+    4300020: mesh_tile_0081
+    4300022: mesh_tile_0082
     11400000: mesh_0001
+    11400002: mesh_tile_0065
+    11400004: mesh_tile_0066
+    11400006: mesh_tile_0067
+    11400008: mesh_tile_0068
+    11400010: mesh_tile_0069
+    11400012: mesh_tile_0073
+    11400014: mesh_tile_0074
+    11400016: mesh_tile_0076
+    11400018: mesh_tile_0077
+    11400020: mesh_tile_0081
+    11400022: mesh_tile_0082
   materials:
     importMaterials: 0
     materialName: 0

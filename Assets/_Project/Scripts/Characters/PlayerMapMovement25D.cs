@@ -22,7 +22,9 @@ public class PlayerMapMovement25D : MonoBehaviour {
 	public HashSet<ItemType> abilityList;
 
 	//float weight = 0f;
-	public Animator animator;
+	public Animator animatorFrontBack;
+	public Animator animatorSide;
+	Animator currentAnimator;
 	public Transform flipObject;
 	public Quaternion startingRotation;
 	public Quaternion flippedRotation;
@@ -35,6 +37,8 @@ public class PlayerMapMovement25D : MonoBehaviour {
 
 		startingRotation = flipObject.rotation;
 		flippedRotation = startingRotation * Quaternion.Euler (0f, 180f, 0f);
+
+		SetToSide ();
 	}
 
 	// Update is called once per frame
@@ -60,6 +64,12 @@ public class PlayerMapMovement25D : MonoBehaviour {
 			else
 				flipObject.rotation = startingRotation;
 
+			animatorSide.transform.localScale = (move.x > 0f) ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
+			//animatorSide.transform.localScale = newScale;
+			/*if (move.x < 0f)
+			else
+				animatorSide.transform.localScale.x = 1f;*/
+
 			lastMoveTime = Time.time;
 		}
 		else
@@ -68,10 +78,29 @@ public class PlayerMapMovement25D : MonoBehaviour {
 				isIdle = true;
 		}
 
-		animator.SetFloat ("Vertical", move.y);
+		if (move.y < -0.1f || move.y > 0.1f)
+			SetToFrontBack ();
+		else if (move.x < -0.1f || move.x > 0.1f)
+			SetToSide ();
+			
+		currentAnimator.SetFloat ("Vertical", move.y);
+		currentAnimator.SetFloat ("Horizontal", move.x);
 
 		//animator.SetBool ("IsWalking", isWalking);
 		//animator.SetBool ("IsIdle", isIdle);
+	}
+
+	void SetToSide()
+	{
+		animatorSide.gameObject.SetActive (true);
+		animatorFrontBack.gameObject.SetActive (false);
+		currentAnimator = animatorSide;
+	}
+	void SetToFrontBack()
+	{
+		animatorSide.gameObject.SetActive (false);
+		animatorFrontBack.gameObject.SetActive (true);
+		currentAnimator = animatorFrontBack;
 	}
 
 	void FixedUpdate()
