@@ -10,7 +10,8 @@ using UnityCommon;
 public class CustomT2UImporterAddMapObjects : Tiled2Unity.ICustomTiledImporter  {
 
 	string keyName = "Object";
-	string materialName = "MapDetailsShadow";
+	string materialPath = "Assets/_Project/Materials/";
+	string materialName = "MapDetailsShadow.mat";
 	Material shadowMaterial;
 	float angle = -30f;
 
@@ -20,7 +21,7 @@ public class CustomT2UImporterAddMapObjects : Tiled2Unity.ICustomTiledImporter  
 		{
 			//Create Shadow
 			if (shadowMaterial == null)
-				shadowMaterial = Resources.Load<Material> (materialName);
+				shadowMaterial = AssetDatabase.LoadAssetAtPath<Material>(materialPath + materialName);// Resources.Load<Material> (materialName);
 
 			GameObject ShadowObject = GameObject.Instantiate (gameObject);
 			ShadowObject.transform.SetParent (gameObject.transform.parent);

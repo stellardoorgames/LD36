@@ -65,10 +65,6 @@ public class PlayerMapMovement25D : MonoBehaviour {
 				flipObject.rotation = startingRotation;
 
 			animatorSide.transform.localScale = (move.x > 0f) ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
-			//animatorSide.transform.localScale = newScale;
-			/*if (move.x < 0f)
-			else
-				animatorSide.transform.localScale.x = 1f;*/
 
 			lastMoveTime = Time.time;
 		}
@@ -78,13 +74,15 @@ public class PlayerMapMovement25D : MonoBehaviour {
 				isIdle = true;
 		}
 
-		if (move.y < -0.1f || move.y > 0.1f)
+		if (move.y > 0.1f)
 			SetToFrontBack ();
 		else if (move.x < -0.1f || move.x > 0.1f)
 			SetToSide ();
+		else if (move.y < -0.1f)
+			SetToFrontBack ();
 			
-		currentAnimator.SetFloat ("Vertical", move.y);
-		currentAnimator.SetFloat ("Horizontal", move.x);
+		currentAnimator.SetFloat ("Vertical", move.y * 8);
+		currentAnimator.SetFloat ("Horizontal", move.x * 8);
 
 		//animator.SetBool ("IsWalking", isWalking);
 		//animator.SetBool ("IsIdle", isIdle);
