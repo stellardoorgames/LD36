@@ -23,10 +23,10 @@ public class CustomT2UImporterAddMapObjects : Tiled2Unity.ICustomTiledImporter  
 			if (shadowMaterial == null)
 				shadowMaterial = AssetDatabase.LoadAssetAtPath<Material>(materialPath + materialName);// Resources.Load<Material> (materialName);
 
-			GameObject ShadowObject = GameObject.Instantiate (gameObject);
-			ShadowObject.transform.SetParent (gameObject.transform.parent);
-			ShadowObject.name = "Shadow";
-			MeshRenderer mr = ShadowObject.GetComponentInChildren<MeshRenderer> ();
+			GameObject shadowObject = GameObject.Instantiate (gameObject);
+			shadowObject.transform.SetParent (gameObject.transform.parent);
+			shadowObject.name = "Shadow";
+			MeshRenderer mr = shadowObject.GetComponentInChildren<MeshRenderer> ();
 			mr.material = shadowMaterial;
 
 			//Set Angle

@@ -24,10 +24,16 @@ public class PlayerMapMovement25D : MonoBehaviour {
 	//float weight = 0f;
 	public Animator animatorFrontBack;
 	public Animator animatorSide;
+	public Animator animFrontShadow;
+	public Animator animSideShadow;
 	Animator currentAnimator;
+	Animator currentShadow;
 	public Transform flipObject;
-	public Quaternion startingRotation;
-	public Quaternion flippedRotation;
+	Quaternion startingRotation;
+	Quaternion flippedRotation;
+	Quaternion shadowStartingRotation;
+	Quaternion shadowFlippedRotation;
+
 
 	// Use this for initialization
 	void Start () 
@@ -37,6 +43,9 @@ public class PlayerMapMovement25D : MonoBehaviour {
 
 		startingRotation = flipObject.rotation;
 		flippedRotation = startingRotation * Quaternion.Euler (0f, 180f, 0f);
+
+		shadowStartingRotation = animFrontShadow.transform.rotation;
+		shadowFlippedRotation = shadowStartingRotation * Quaternion.Euler (0f, 180f, 0f);
 
 		SetToSide ();
 	}
@@ -59,12 +68,16 @@ public class PlayerMapMovement25D : MonoBehaviour {
 
 			//transform.position += (move * (walkSpeed * Time.deltaTime));
 
-			if (move.y < 0f)
+			flipObject.rotation = (move.y < 0f) ? flippedRotation : startingRotation;
+			animFrontShadow.transform.rotation = (move.y < 0f) ? shadowFlippedRotation : shadowStartingRotation;
+
+			/*if (move.y < 0f)
 				flipObject.rotation = flippedRotation;
 			else
-				flipObject.rotation = startingRotation;
+				flipObject.rotation = startingRotation;*/
 
 			animatorSide.transform.localScale = (move.x > 0f) ? new Vector3(1f, 1f, 1f) : new Vector3(-1f, 1f, 1f);
+			animSideShadow.transform.localScale = (move.x > 0f) ? new Vector3(1f, 0.5f, 0.1f) : new Vector3(-1f, 0.5f, 0.1f);
 
 			lastMoveTime = Time.time;
 		}
@@ -82,7 +95,10 @@ public class PlayerMapMovement25D : MonoBehaviour {
 			SetToFrontBack ();
 			
 		currentAnimator.SetFloat ("Vertical", move.y * 8);
+		currentShadow.SetFloat ("Vertical", move.y * 8);
+
 		currentAnimator.SetFloat ("Horizontal", move.x * 8);
+		currentShadow.SetFloat ("Horizontal", move.x * 8);
 
 		//animator.SetBool ("IsWalking", isWalking);
 		//animator.SetBool ("IsIdle", isIdle);
@@ -91,14 +107,24 @@ public class PlayerMapMovement25D : MonoBehaviour {
 	void SetToSide()
 	{
 		animatorSide.gameObject.SetActive (true);
+		animSideShadow.gameObject.SetActive (true);
+
 		animatorFrontBack.gameObject.SetActive (false);
+		animFrontShadow.gameObject.SetActive (false);
+
 		currentAnimator = animatorSide;
+		currentShadow = animSideShadow;
 	}
 	void SetToFrontBack()
 	{
 		animatorSide.gameObject.SetActive (false);
+		animSideShadow.gameObject.SetActive (false);
+
 		animatorFrontBack.gameObject.SetActive (true);
+		animFrontShadow.gameObject.SetActive (true);
+
 		currentAnimator = animatorFrontBack;
+		currentShadow = animFrontShadow;
 	}
 
 	void FixedUpdate()
